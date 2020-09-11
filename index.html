@@ -13,10 +13,10 @@
 		<img id="mod-img" src="http://www.cubing.net/api/visualcube/?fmt=svg&case=">
 		<script>
 			console.log("hello tested");
-			let alg-data = "R2 U' R2' S R2 S' U R2'";
-			alg-data = alg-data.replace(/\s/g, '');
-			console.log(${alg-data});
-			let sourced = document.getElementById("mod-img").innerHTML = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + alg-data;
+			let algData = "R2 U' R2' S R2 S' U R2'";
+			algData = algData.replace(/\s/g, '');
+			console.log(${algData});
+			let sourced = document.getElementById("mod-img").innerHTML = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData;
 			console.log("hello test");
 			console.log(${sourced});
 		</script>
