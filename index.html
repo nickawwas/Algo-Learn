@@ -2,31 +2,32 @@
 	<html>
 		<head>
 			<meta charset="UTF-8">
-			<meta name="description" content="3-Bld Cubing Algs Website">
 			<meta name="author" content="Nicholas Kawwas">
+			<meta name="description" content="3-Bld Cubing Algs Website">
 			<meta name="keywords" content="Cubing Algs Blind Solving Rubik's Cube 3Bld">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+			
 			<title> Cubing Algs </title>
 
 <!-- 			<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-			<link rel="icon" href="nk-logo.png">
 			<link rel="stylesheet" type="text/css" href="../src/App.css"> -->
 		</head>
-		<body>
-			<div id="root">
-				
-			</div>
-			  
-			<h1> Cubing Algs </h1>
+		<body>  
+			<!-- Add Nav Bar Here -->
+			
+			<header>
+				<h1> Cubing Algs </h1>
+			</header>
 
 			<div id="cubing-imgs"> </div>
 
 			<script>				
 				function addImgs(caseName, algData, bldData) {
+					//Main Div
 					var addToDiv = document.getElementById("cubing-imgs");
-					// addToDiv.innerHTML = ""; // To Clear Images
 					
 					for (let i = 0; i < algData.length; i++) {
+						//Sub Div for Each Alg Case
 						var newDiv = document.createElement("div");
 						newDiv.className = "alg-" + i;
 
@@ -35,26 +36,32 @@
 						newImg.src = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData[i].replace(/\s/g, '');	
 						
 						var algCase = document.createElement("p");
-						var regAlg = document.createElement("p");
-						var bldAlg = document.createElement("p");
 						algCase.textContent = caseName[i];
+						
+						var regAlg = document.createElement("p");
 						regAlg.textContent = algData[i];
+						
+						var bldAlg = document.createElement("p");
 						bldAlg.textContent = bldData[i];
 
+						//Adds Elements to Sub Div
 						newDiv.appendChild(algCase);
 						newDiv.appendChild(newImg);
 						newDiv.appendChild(regAlg);
 						newDiv.appendChild(bldAlg);
 						
+						//Adds Sub Div Into Main Div
 						addToDiv.appendChild(newDiv);
 					}
 				}
 
+				//Alg Data 
 				let algCases = ["UB-UR (AB)", "UR-UB (BA)"];
 				let regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"];
 				let bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"];
+				
+				//Calling Function
 				addImgs(algCases, regAlgs, bldAlgs);
-
 			</script>
 		</body>
 	</html>
