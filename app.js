@@ -1,5 +1,5 @@
 fetch("./cubing-data.json")
-  .then(function(resp)) {
+  .then(function(resp) {
     return resp.json();
    })
   .then(function(data) {
