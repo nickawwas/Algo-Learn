@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Cubing Blind Algorithms Website">
-		<meta name="author" content="Nicholas Kawwas">
-		<meta name="keywords" content="Cubing Algs Blind Solving Rubik's Cube">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		<title> Cubing Algs </title>
-	</head>
-	<body>
-  		<h1> Cubing Algs </h1>
-		<img id="mod-img" src="http://www.cubing.net/api/visualcube/?fmt=svg&case=">
-		<script>
-			console.log("hello tested");
-			let algData = "R2 U' R2' S R2 S' U R2'";
-			algData = algData.replace(/\s/g, '');
-			console.log(${algData});
-			let sourced = document.getElementById("mod-img").innerHTML = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData;
-			console.log("hello test");
-			console.log(${sourced});
-		</script>
-	</body>
-</html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="description" content="3-Bld Cubing Algs Website">
+			<meta name="author" content="Nicholas Kawwas">
+			<meta name="keywords" content="Cubing Algs Blind Solving Rubik's Cube 3Bld">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+			<title> Cubing Algs </title>
+
+<!-- 			<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+			<link rel="icon" href="nk-logo.png">
+			<link rel="stylesheet" type="text/css" href="../src/App.css"> -->
+		</head>
+		<body>
+			<div id="root">
+				
+			</div>
+			  
+			<h1> Cubing Algs </h1>
+
+			<div id="cubing-imgs"> </div>
+
+			<script>				
+				function addImgs(caseName, algData, bldData) {
+					var addToDiv = document.getElementById("cubing-imgs");
+					// addToDiv.innerHTML = ""; // To Clear Images
+					
+					for (let i = 0; i < algData.length; i++) {
+						var newDiv = document.createElement("div");
+						newDiv.className = "alg-" + i;
+
+						var newImg = new Image();
+						newImg.id = "img-" + i;
+						newImg.src = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData[i].replace(/\s/g, '');	
+						
+						var algCase = document.createElement("p");
+						var regAlg = document.createElement("p");
+						var bldAlg = document.createElement("p");
+						algCase.textContent = caseName[i];
+						regAlg.textContent = algData[i];
+						bldAlg.textContent = bldData[i];
+
+						newDiv.appendChild(algCase);
+						newDiv.appendChild(newImg);
+						newDiv.appendChild(regAlg);
+						newDiv.appendChild(bldAlg);
+						
+						addToDiv.appendChild(newDiv);
+					}
+				}
+
+				let algCases = ["UB-UR (AB)", "UR-UB (BA)"];
+				let regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"];
+				let bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"];
+				addImgs(algCases, regAlgs, bldAlgs);
+
+			</script>
+		</body>
+	</html>
