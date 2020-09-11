@@ -12,3 +12,8 @@ header {
   font-size: 20px;
   text-align: center;
 }
+
+img {
+  border-radius: 20px;
+}
+
