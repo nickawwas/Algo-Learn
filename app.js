@@ -5,7 +5,8 @@ alg = alg.replace(/\s/g,'');
 
 let sourced = `http://www.cubing.net/api/visualcube/?fmt=svg&amp;case= ${alg}`;
 console.log("hello");
-// <img src=`sourced`>
+
+<img src=${sourced}>
 
 // fetch("./cubing-data.json")
 //   .then(function(resp) {
