@@ -1,23 +1,50 @@
 body {
-  color: #00171F;
-  font-family: monospace;
+    color: #00171F;
+    font-family: monospace;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #edf0f1;
+}
   
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #edf0f1;
-}
-
 header {
-  font-size: 20px;
-  text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
-
-p {
-  font-size: 20px;
-}
-
+  
+  
 img {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
+div p {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div p:first-child {
+    justify-content: left;
+}
+
+/* Main Container of Sub Containers */
+#cubing-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:  center;
+    padding: 20px 10%;
+}
+      
+/* Sub Container for Each Case */
+.algs {
+    background-color: lightgray;
+    border-radius: 20px;
+    height: 150px;
+    width: 400px;
+    margin: 20px;
+    padding: 15px;
+}
