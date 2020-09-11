@@ -32,10 +32,10 @@
 					for (let i = 0; i < algData.length; i++) {
 						//Sub Div for Each Alg Case
 						var newDiv = document.createElement("div");
-						newDiv.className = "alg-" + i;
+						newDiv.className = "algs"; //-" + i;
 
 						var newImg = new Image();
-						newImg.id = "img-" + i;
+						//newImg.id = "img-" + i;
 						newImg.src = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData[i].replace(/\s/g, '');	
 						
 						var algCase = document.createElement("p");
