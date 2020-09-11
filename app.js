@@ -1,3 +1,5 @@
+"use strict";
+
 fetch("./cubing-data.json")
   .then(function(resp) {
     return resp.json();
