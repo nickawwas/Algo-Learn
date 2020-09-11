@@ -12,7 +12,12 @@
   		<h1> Cubing Algs v1 </h1>
 		<img id="mod-img" src="http://www.cubing.net/api/visualcube/?fmt=svg&case=">
 		<script>
+			let alg-data = "R2 U' R2' S R2 S' U R2'";
+			alg-data = alg-data.replace(/\s/g, '');
+			console.log(${alg-data});
+			let sourced = document.getElementById("mod-img").innerHTML = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + alg-data;
 			console.log("hello test");
+			console.log(${sourced});
 		</script>
 	</body>
 </html>
