@@ -1,0 +1,14 @@
+body {
+  color: #00171F;
+  font-family: monospace;
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #edf0f1;
+}
+
+header {
+  font-size: 20px;
+  text-align: center;
+}
