@@ -11,7 +11,6 @@
 			
 			<link rel="stylesheet" type="text/css" href="styles.css">
 
-
 <!-- 			<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 			<link rel="stylesheet" type="text/css" href="../src/App.css"> -->
 		</head>
@@ -22,17 +21,18 @@
 				<h1> Cubing Algs </h1>
 			</header>
 
-			<div id="cubing-imgs"> </div>
+			<div id="cubing-data"> </div>
 
 			<script>				
 				function addImgs(caseName, algData, bldData) {
 					//Main Div
-					var addToDiv = document.getElementById("cubing-imgs");
+					var addToDiv = document.getElementById("cubing-data");
+					// addToDiv.innerHTML = ""; // To Clear Images
 					
 					for (let i = 0; i < algData.length; i++) {
 						//Sub Div for Each Alg Case
 						var newDiv = document.createElement("div");
-						newDiv.className = "algs"; //-" + i;
+						newDiv.id = "algs"; //"alg-" + i;
 
 						var newImg = new Image();
 						//newImg.id = "img-" + i;
@@ -40,14 +40,17 @@
 						
 						var algCase = document.createElement("p");
 						algCase.textContent = caseName[i];
-						
+						algCase.id = "alg-case";
+
 						var regAlg = document.createElement("p");
 						regAlg.textContent = algData[i];
-						
+						regAlg.id = "alg-moves";
+
 						var bldAlg = document.createElement("p");
 						bldAlg.textContent = bldData[i];
+						bldAlg.id = "bld-moves";
 
-						//Adds Elements to Sub Div
+						//Adds Elements to Sub Div	
 						newDiv.appendChild(algCase);
 						newDiv.appendChild(newImg);
 						newDiv.appendChild(regAlg);
@@ -57,14 +60,16 @@
 						addToDiv.appendChild(newDiv);
 					}
 				}
-
-				//Alg Data 
+				
+				
+				//Alg Data (Case Name, Blind and Reg Alg Notation)
 				let algCases = ["UB-UR (AB)", "UR-UB (BA)"];
 				let regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"];
 				let bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"];
 				
 				//Calling Function
 				addImgs(algCases, regAlgs, bldAlgs);
+
 			</script>
 		</body>
 	</html>
