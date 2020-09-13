@@ -30,7 +30,7 @@
 					var addToDiv = document.getElementById("cubing-data");
 					// addToDiv.innerHTML = ""; // To Clear Images
 					
-					for (let i = 0; i < algData.length; i++) {
+					for (var i = 0; i < algData.length; i++) {
 						//Sub Div for Each Alg Case
 						var newDiv = document.createElement("div");
 						newDiv.id = "algs"; //"alg-" + i;
@@ -63,9 +63,9 @@
 				}
 				
 				//Alg Data (Case Name, Blind and Reg Alg Notation)
-				let algCases = ["UB-UR (AB)", "UR-UB (BA)"];
-				let regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"];
-				let bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"];
+				var algCases = ["UB-UR (AB)", "UR-UB (BA)"];
+				var regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"];
+				var bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"];
 				
 				//Calling Function
 				addImgs(algCases, regAlgs, bldAlgs);
