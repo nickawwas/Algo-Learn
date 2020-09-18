@@ -14,7 +14,7 @@ body {
 } */
 
 /* Header: Logo + Navigation Bar + Contact Button */
-header {
+/* header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -25,7 +25,7 @@ header {
 .logo {
     cursor: pointer;
     margin-right: auto;
-/*     font-family: "Kaushan Script";  */
+    font-family: "Kaushan Script"; 
 }
 
 .logo:hover {
@@ -73,8 +73,8 @@ header {
 .current-tab {
     padding-top: 3px;
     border-bottom: 3px solid rgb(8, 146, 180);
-}
-  
+} */
+
 /* Main Container of Sub Containers */
 #cubing-data {
     display: flex;
