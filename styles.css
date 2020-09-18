@@ -54,19 +54,20 @@ div p {
     justify-content: center;
 }
 
-#alg-case {
+/* #alg-case {
     grid-row: 1;
     grid-column: 1;
 
     padding-left: 10px;
     padding-bottom: 10px;
 }
+ */
 
-#alg-moves {
+.alg-moves {
     padding-top: 30px;
     padding-left: 20px;
 }
 
-#bld-moves {
+.bld-moves {
     padding-top: 20px;
 }
