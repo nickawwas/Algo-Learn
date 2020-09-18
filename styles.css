@@ -67,7 +67,6 @@ div p {
     padding-left: 20px;
 }
 
-#bld-moves {
-    padding-top: 50px;
-    padding-left: 20px;
+.bld-moves {
+    padding-top: 20px;
 }
