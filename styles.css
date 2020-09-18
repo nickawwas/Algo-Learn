@@ -8,9 +8,71 @@ body {
     background: #edf0f1;
 }
   
-header {
+/* header {
     font-size: 20px;
     text-align: center;
+} */
+
+/* Header: Logo + Navigation Bar + Contact Button */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    font-size: 25px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+/*     font-family: "Kaushan Script";  */
+}
+
+.logo:hover {
+    color:  rgb(8, 146, 180);
+}
+
+.nav-bar {
+    list-style: none;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-bar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-bar li a:hover {
+    color: rgb(8, 146, 180);
+}
+
+.nav-bar ul, li, a, button {
+    font-size: 16px;
+    color: #edf0f1;
+    background-color: none;
+    text-decoration: none;
+}
+
+.contact-button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(8, 146, 180);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-button:hover {
+    background-color: rgba(8, 146, 180, 0.6);
+}
+
+.current-tab {
+    padding-top: 3px;
+    border-bottom: 3px solid rgb(8, 146, 180);
 }
   
 /* Main Container of Sub Containers */
