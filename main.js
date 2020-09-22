@@ -1,13 +1,13 @@
 function addImgs(algData, bldData) { //caseName
   //Main Div
-  var addToDiv = document.getElementById("cubing-data");
+  let addToDiv = document.getElementById("cubing-data");
   
   for (var i = 0; i < algData.length; i++) {
     //Sub Div for Each Alg Case
-    var newDiv = document.createElement("div");
+    let newDiv = document.createElement("div");
     newDiv.id = "algs"; //"alg-" + i;
 
-    var newImg = new Image();
+    let newImg = new Image();
     //newImg.id = "img-" + i;
     newImg.src = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData[i].replace(/\s/g, '');	
 
