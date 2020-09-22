@@ -7,6 +7,11 @@ body {
     box-sizing: border-box;
     background: #edf0f1;
 }
+ 
+p {
+   margin: 0;
+   padding: 0; 
+}
   
 /* header {
     font-size: 20px;
@@ -81,7 +86,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    /* padding: 20px 10%; */
 }
       
 /* Sub Container for Each Case */
@@ -97,39 +101,35 @@ body {
 
     display: grid;
     grid-template-columns: 130px 270px;
-    grid-template-rows: 30px 130px;
-    grid-column-gap: 0;
-    grid-row-gap: 0;  
+    grid-template-rows: 30px 25px 40px 40px 25px;
+    grid-template-areas: "algName ."
+                         "algImg ."
+                         "algImg algMoves"
+                         "algImg bldMoves"
+                         "algImg .";
 }
 
 img {
-    grid-row: 2;
-    grid-column: 1;
+    grid-area: algImg;
     border-radius: 20px;
 }
 
 div p {
     font-size: 18px;
-    grid-row: 2;
-    grid-column: 2;
-    margin: 0px;
+}
+
+#alg-case {
+    grid-area: algName;
+    text-align: center;
     justify-content: center;
 }
 
-/* #alg-case {
-    grid-row: 1;
-    grid-column: 1;
-
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
- */
-
 #alg-moves {
-    padding-top: 30px;
+    grid-area: algMoves;
     padding-left: 20px;
 }
 
-.bld-moves {
-    padding-top: 20px;
+#bld-moves {
+    grid-area: bldMoves;
+    padding-left: 20px;
 }
