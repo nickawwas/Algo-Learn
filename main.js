@@ -11,9 +11,9 @@ function addImgs(algData, bldData) { //caseName
     //newImg.id = "img-" + i;
     newImg.src = "http://www.cubing.net/api/visualcube/?fmt=svg&case=" + algData[i].replace(/\s/g, '');	
 
-    // let algCase = document.createElement("p");
-    // algCase.textContent = caseName[i];
-    // algCase.id = "alg-case";
+//     let algCase = document.createElement("p");
+//     algCase.textContent = caseName[i];
+//     algCase.id = "alg-case";
 
     let regAlg = document.createElement("p");
     regAlg.textContent = algData[i];
