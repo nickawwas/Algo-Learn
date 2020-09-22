@@ -35,10 +35,7 @@ function addImgs(caseName, algData, bldData) { //caseName
 }
 
 // Alg Data (Case Name, Blind and Reg Alg Notation) 
-// let regAlgs = ["R2 U' S R2 S' R2 U R2'", "R2 U' R2' S R2 S' U R2'"]; 
-// let bldAlgs = ["[R2 U': [S, R2]]", "[R2 U': [R2', S]]"]; 
-
- const algCases = ["ULB-URB (AB)",
+const algCases = ["ULB-URB (AB)",
 "ULB-ULF (AD)",
 "ULB-LFU (AF)", 
 "ULB-LDF (AG)", 
@@ -57,8 +54,43 @@ function addImgs(caseName, algData, bldData) { //caseName
 "ULB-DBR (AW)",
 "ULB-DBL (AX)"];
 
-const regAlgos = ["Lw' U R' D2 R U' R' D2' R Lw", "R' D' R U2 R' D R U R' D' R U' U2' R' D R", "F U2 R' D' R U2' R' D R F'", "R' D R U2 R' D' R U2'", "U' R D' R' U2 R D R' U2' U", "Lw' U2 R' D2 R U2' R' D2' R Lw", "D' R' D R U2 R' D' R U2' D", "D' U' R D' R' U2 R D R' U2' U D", "R D R' R' D2 R U2 R' D2' R U2' R D' R'", "U' R D R' U2 R D' R' U2' U", "R' D' R U2 R' D R U2'", "R' D' U2 R' D R U2' R' D' R D R", "R' D2 R U2 R' D2' R U2'", "D U' R D' R' U2 R D R' U2' U D'", "R F' R' U' R D R' U2 R D' R' U2' U R F R'", "D R D' R' R' D R U2 R' D' R U2' R D R' D'", "R D' R' R' D R U2 R' D' R U2' R D R'", "R' z R' R' D R U2 R' D' R U2' R z' R"];
-const bldAlgos = ["[Lw': [U, R' D2 R]]", "[R' D' R U2: [R' D R, U]]", "[F: [U2, R' D' R]]", "[R' D R, U2]", "[U': [R D' R', U2]]", "[Lw': [U2, R' D2 R]]", "[D': [R' D R, U2]]", "[D' U': [R D' R', U2]]", "[R D R': [R' D2 R, U2]]", "[U': [R D R', U2]]", "[R' D' R, U2]", "[R' D': [U2, R' D R]]", "[R' D2 R, U2]", "[D U': [R D' R', U2]]", "[R F' R' U': [R D R', U2]]", "[D R D' R': [R' D R, U2]]", "[R D' R': [R' D R, U2]]", "[R' z R': [R' D R, U2]]"];
+const regAlgos = ["Lw' U R' D2 R U' R' D2' R Lw", 
+"R' D' R U2 R' D R U R' D' R U' U2' R' D R", 
+"F U2 R' D' R U2' R' D R F'", 
+"R' D R U2 R' D' R U2'", 
+"U' R D' R' U2 R D R' U2' U", 
+"Lw' U2 R' D2 R U2' R' D2' R Lw", 
+"D' R' D R U2 R' D' R U2' D", 
+"D' U' R D' R' U2 R D R' U2' U D", 
+"R D R' R' D2 R U2 R' D2' R U2' R D' R'", 
+"U' R D R' U2 R D' R' U2' U", 
+"R' D' R U2 R' D R U2'", 
+"R' D' U2 R' D R U2' R' D' R D R", 
+"R' D2 R U2 R' D2' R U2'", 
+"D U' R D' R' U2 R D R' U2' U D'", 
+"R F' R' U' R D R' U2 R D' R' U2' U R F R'", 
+"D R D' R' R' D R U2 R' D' R U2' R D R' D'", 
+"R D' R' R' D R U2 R' D' R U2' R D R'", 
+"R' z R' R' D R U2 R' D' R U2' R z' R"];
+
+const bldAlgos = ["[Lw': [U, R' D2 R]]", 
+"[R' D' R U2: [R' D R, U]]", 
+"[F: [U2, R' D' R]]", 
+"[R' D R, U2]", 
+"[U': [R D' R', U2]]", 
+"[Lw': [U2, R' D2 R]]", 
+"[D': [R' D R, U2]]", 
+"[D' U': [R D' R', U2]]", 
+"[R D R': [R' D2 R, U2]]", 
+"[U': [R D R', U2]]", 
+"[R' D' R, U2]", 
+"[R' D': [U2, R' D R]]", 
+"[R' D2 R, U2]", 
+"[D U': [R D' R', U2]]", 
+"[R F' R' U': [R D R', U2]]", 
+"[D R D' R': [R' D R, U2]]", 
+"[R D' R': [R' D R, U2]]", 
+"[R' z R': [R' D R, U2]]"];
 
 //Calling Function
 addImgs(algCases, regAlgos, bldAlgos);
