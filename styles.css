@@ -12,6 +12,11 @@ p {
    margin: 0;
    padding: 0; 
 }
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
   
 /* header {
     font-size: 20px;
@@ -116,12 +121,13 @@ img {
 
 div p {
     font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #alg-case {
     grid-area: algName;
     text-align: center;
-    justify-content: center;
 }
 
 #alg-moves {
