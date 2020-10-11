@@ -207,15 +207,15 @@ const cllAlgs = ["R U R' U R U2 R'",
 "(U2) F' R U R' U2 R' F2 R",
 "(U2) R U2 R' U2 R' F R F'",
 "R U2 R' F R' F' R U' R U' R'",
-"(U2) R' F R F' R U R'"
+"(U2) R' F R F' R U R'",
 "R2 F R U2 R U' R' U2 F' R",
 "(R U R' U') (R' F R F')",
 "(U) F U' R U2 R' U' F2 R U R'",
 "(U') F (R U R' U') R U' (R' U' R U) R' F'",
 "F R F' R U R' U' R' / (U2) L' U' L U L F' L' F",
 "(U') R' U R' U2 R U2 R' U R2 U' R'",
-"(U) R' U R U2 R2 F R F' R"
-"(U') F R U R' U' F' / (U) F U R U' R' F'"
+"(U) R' U R U2 R2 F R F' R",
+"(U') F R U R' U' F' / (U) F U R U' R' F'",
 "(U2) F R U R' U2 F' R U' R' F",
 "R U' R2 F R F' R U R' U' R U R' U'",  
 "(U2) R U R2' U' R U2 R' U2' R U' R",
