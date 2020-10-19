@@ -240,5 +240,6 @@ const cllAlgs = ["R U R' U R U2 R'",
 
 //205, 211, 218, 223, 229, 235
 const cllNames = ["Sune", "Anti-Sune", "Charmeleon / T", "Superman / U", "Pi", "Double Sune / H"];
+
 //Calling Function
 addImgs(algCases, regAlgos, bldAlgos);
