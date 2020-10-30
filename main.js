@@ -250,25 +250,11 @@ fetch("./cll.json")
   .then(resp => resp.json())
   .then(data => {
     result = data;
+
     console.log(result);
-    console.log("Testing ..." + result.cll[0]);
+    console.log("Testing1 ..." + result.pll);
+    console.log("Testing2 ..." + result.cll[0]);
   });
-
-console.log("Testing ..." + result.pll);
-
-
-// fetch("./cll.json")
-//   .then(response => response.json())
-//   .then(json => console.log(json));
-
-// fetch("cll.json")
-//   .then(content => content.json())
-//   .then(function(data) {
-//     console.log(data);
-//   });
-
-// let test = JSON.parse(text);
-// console.log(test);
 
 // "cllAlgs": ["R U R' U R U2 R'",
 // "(F R' F' R) U2 R U2 R'",
