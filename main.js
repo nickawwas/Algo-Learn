@@ -249,7 +249,7 @@ let result;
 fetch("./cll.json")
   .then(resp => resp.json())
   .then(data => {
-    result = JSON.parse(data);
+    result = data;
     console.log(result);
     console.log("Testing ..." + result.cll[0]);
   });
