@@ -1,12 +1,11 @@
 { 
-    "cll": [
-        {
+    "cll": [{
             "cllName": "Nope",
             "cllAlg": "R2"
         },
         {
             "cllName": "No",
             "cllAlg": "L2"
-        }
-    ]
+        }],
+    "pll": "yes"
 }

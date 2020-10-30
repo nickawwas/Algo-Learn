@@ -245,15 +245,16 @@ const bldAlgos = ["[Lw': [U, R' D2 R]]",
 addImgs(algCases, regAlgos, bldAlgos);
 
 "use strict";
-
+let result;
 fetch("./cll.json")
   .then(resp => resp.json())
   .then(data => {
-    const result = JSON.parse(data);
+    result = JSON.parse(data);
     console.log(result);
+    console.log("Testing ..." + result.cll[0]);
   });
 
-console.log("Testing ..." + result.cll[0]);
+console.log("Testing ..." + result.pll);
 
 
 // fetch("./cll.json")
