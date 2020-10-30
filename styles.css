@@ -34,8 +34,6 @@ header {
     cursor: pointer;
     margin: auto auto auto 0px;
 
-    padding: 10px 0px;
-
     font-family: 'Dosis';
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -182,7 +180,8 @@ header {
  }
 
  .nav-on {
-     transform: translateX(0%);
+    z-index: 1;
+    transform: translateX(0%);
  }
 
 @keyframes navSliderFade {
@@ -271,7 +270,7 @@ div p {
 /* Contact Me Form */
 .register-wrapper {
     position: relative;
-    z-index: 3;
+    z-index: 0;
     padding: 50px 20px;
     color: #999;
     font-size: 1rem;
@@ -308,7 +307,7 @@ div p {
 
 .register-wrapper form input[type="submit"] {
     position:relative;
-    z-index: 1;
+    z-index: 0;
     display: inline-block;
     padding: 0 20px;
     background-color: #f2395a;
@@ -364,6 +363,7 @@ div p {
     background: white;
     border: solid 1px #e6e6e6;
     border-radius: 5px;
+    /* transform: scale(0.9) translate(0,0); */
     transform: scale(0.9, translate(0,0));
     transition: all 0.3s ease;
 }
