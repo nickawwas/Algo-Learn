@@ -197,49 +197,141 @@ const bldAlgos = ["[Lw': [U, R' D2 R]]",
 "[R D' R': [R' D R, U2]]", 
 "[R' z R': [R' D R, U2]]"];
 
-const cllAlgs = ["R U R' U R U2 R'",
-"(F R' F' R) U2 R U2 R'",
-"(U2) R U' R U' R' U R' U' F R' F'",
-"(U2) R U R' U (R' F R F') R U2 R'",
-"R U' R' (F R' F' R)",
-"R' F2 R U2 R U' R' F", 
-"R' U' R U' R' U2 R",
-"(U2) F' R U R' U2 R' F2 R",
-"(U2) R U2 R' U2 R' F R F'",
-"R U2 R' F R' F' R U' R U' R'",
-"(U2) R' F R F' R U R'",
-"R2 F R U2 R U' R' U2 F' R",
-"(R U R' U') (R' F R F')",
-"(U) F U' R U2 R' U' F2 R U R'",
-"(U') F (R U R' U') R U' (R' U' R U) R' F'",
-"F R F' R U R' U' R' / (U2) L' U' L U L F' L' F",
-"(U') R' U R' U2 R U2 R' U R2 U' R'",
-"(U) R' U R U2 R2 F R F' R",
-"(U') F R U R' U' F' / (U) F U R U' R' F'",
-"(U2) F R U R' U2 F' R U' R' F",
-"R U' R2 F R F' R U R' U' R U R' U'",  
-"(U2) R U R2' U' R U2 R' U2' R U' R",
-"x R U' R U' R' U L' U' L x2",
-"R' U (R' F R F') R U2 (R' U R)",
-"(U) F' (R U R' U') R' F R / F R U' (R' U' R U) R' F'",
-"R U2 R2 F R F' R U2 R'",
-"(U') R U' R' U R U' R' F R' F' R2 U R'",
-"(F R' F' R) (U R U' R')",
-"(U) R' U R' U2 R U' R' U R U' R2",
-"R U2 R' F' R U2 R' U R' F2 R",
-"F (R U R' U') (R U R' U') F'",
-"R U' R' F R' F R U R' F R",
-"R U2 R' U2 R' F R2 U R' U' F'",
-"(U') R' U' R' F R F' R U' R' U2 R",
-"(U') R U' R U' R' U R' F R2 F'",
-"R' F2 R F' U2 R U' R' U' F",
-"R2 U2 R U2 R2",
-"x' U2 R U2 R2 F2 R U2 x",
-"(U') R U R' U R U (R' F R' F') R",
-"(U') F R2 U' R2 U' R2 U R2 F'"];
+// const cllAlgs = ["R U R' U R U2 R'",
+// "(F R' F' R) U2 R U2 R'",
+// "(U2) R U' R U' R' U R' U' F R' F'",
+// "(U2) R U R' U (R' F R F') R U2 R'",
+// "R U' R' (F R' F' R)",
+// "R' F2 R U2 R U' R' F", 
+// "R' U' R U' R' U2 R",
+// "(U2) F' R U R' U2 R' F2 R",
+// "(U2) R U2 R' U2 R' F R F'",
+// "R U2 R' F R' F' R U' R U' R'",
+// "(U2) R' F R F' R U R'",
+// "R2 F R U2 R U' R' U2 F' R",
+// "(R U R' U') (R' F R F')",
+// "(U) F U' R U2 R' U' F2 R U R'",
+// "(U') F (R U R' U') R U' (R' U' R U) R' F'",
+// "F R F' R U R' U' R' / (U2) L' U' L U L F' L' F",
+// "(U') R' U R' U2 R U2 R' U R2 U' R'",
+// "(U) R' U R U2 R2 F R F' R",
+// "(U') F R U R' U' F' / (U) F U R U' R' F'",
+// "(U2) F R U R' U2 F' R U' R' F",
+// "R U' R2 F R F' R U R' U' R U R' U'",  
+// "(U2) R U R2' U' R U2 R' U2' R U' R",
+// "x R U' R U' R' U L' U' L x2",
+// "R' U (R' F R F') R U2 (R' U R)",
+// "(U) F' (R U R' U') R' F R / F R U' (R' U' R U) R' F'",
+// "R U2 R2 F R F' R U2 R'",
+// "(U') R U' R' U R U' R' F R' F' R2 U R'",
+// "(F R' F' R) (U R U' R')",
+// "(U) R' U R' U2 R U' R' U R U' R2",
+// "R U2 R' F' R U2 R' U R' F2 R",
+// "F (R U R' U') (R U R' U') F'",
+// "R U' R' F R' F R U R' F R",
+// "R U2 R' U2 R' F R2 U R' U' F'",
+// "(U') R' U' R' F R F' R U' R' U2 R",
+// "(U') R U' R U' R' U R' F R2 F'",
+// "R' F2 R F' U2 R U' R' U' F",
+// "R2 U2 R U2 R2",
+// "x' U2 R U2 R2 F2 R U2 x",
+// "(U') R U R' U R U (R' F R' F') R",
+// "(U') F R2 U' R2 U' R2 U R2 F'"];
 
-//205, 211, 218, 223, 229, 235
-const cllNames = ["Sune", "Anti-Sune", "Charmeleon / T", "Superman / U", "Pi", "Double Sune / H"];
+// //205, 211, 218, 223, 229, 235
+// const cllNames = ["Sune", "Anti-Sune", "Charmeleon / T", "Superman / U", "Pi", "Double Sune / H"];
 
 //Calling Function
 addImgs(algCases, regAlgos, bldAlgos);
+
+// const result = JSON.parse('cll.json');
+// console.log(result.cll[0].cllAlg)
+// fetch("./cll.json")
+//   .then(response => response.json())
+//   .then(json => console.log(json));
+
+// fetch("cll.json")
+//   .then(content => content.json())
+//   .then(function(data) {
+//     console.log(data);
+//   });
+
+// let test = JSON.parse(text);
+// console.log(test);
+
+// "cllAlgs": ["R U R' U R U2 R'",
+// "(F R' F' R) U2 R U2 R'",
+// "(U2) R U' R U' R' U R' U' F R' F'",
+// "(U2) R U R' U (R' F R F') R U2 R'",
+// "R U' R' (F R' F' R)",
+// "R' F2 R U2 R U' R' F", 
+// "R' U' R U' R' U2 R",
+// "(U2) F' R U R' U2 R' F2 R",
+// "(U2) R U2 R' U2 R' F R F'",
+// "R U2 R' F R' F' R U' R U' R'",
+// "(U2) R' F R F' R U R'",
+// "R2 F R U2 R U' R' U2 F' R",
+// "(R U R' U') (R' F R F')",
+// "(U) F U' R U2 R' U' F2 R U R'",
+// "(U') F (R U R' U') R U' (R' U' R U) R' F'",
+// "F R F' R U R' U' R' / (U2) L' U' L U L F' L' F",
+// "(U') R' U R' U2 R U2 R' U R2 U' R'",
+// "(U) R' U R U2 R2 F R F' R",
+// "(U') F R U R' U' F' / (U) F U R U' R' F'",
+// "(U2) F R U R' U2 F' R U' R' F",
+// "R U' R2 F R F' R U R' U' R U R' U'",  
+// "(U2) R U R2' U' R U2 R' U2' R U' R",
+// "x R U' R U' R' U L' U' L x2",
+// "R' U (R' F R F') R U2 (R' U R)",
+// "(U) F' (R U R' U') R' F R / F R U' (R' U' R U) R' F'",
+// "R U2 R2 F R F' R U2 R'",
+// "(U') R U' R' U R U' R' F R' F' R2 U R'",
+// "(F R' F' R) (U R U' R')",
+// "(U) R' U R' U2 R U' R' U R U' R2",
+// "R U2 R' F' R U2 R' U R' F2 R",
+// "F (R U R' U') (R U R' U') F'",
+// "R U' R' F R' F R U R' F R",
+// "R U2 R' U2 R' F R2 U R' U' F'",
+// "(U') R' U' R' F R F' R U' R' U2 R",
+// "(U') R U' R U' R' U R' F R2 F'",
+// "R' F2 R F' U2 R U' R' U' F",
+// "R2 U2 R U2 R2",
+// "x' U2 R U2 R2 F2 R U2 x",
+// "(U') R U R' U R U (R' F R' F') R",
+// "(U') F R2 U' R2 U' R2 U R2 F'"], 
+// "cllNames": ["Sune", 
+// "Anti-Sune", 
+// "Charmeleon / T", 
+// "Superman / U", 
+// "Pi", 
+// "Double Sune / H"]
+// }]
+
+
+const navSlider = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-bar');
+  const navBar = document.querySelectorAll('.nav-bar li');
+
+  window.onscroll = () => {
+    if(window.pageYOffset >= navBar.offsetTop)
+      nav.classList.add("sticky");
+    else
+      nav.classList.remove("sticky");
+  };
+
+  burger.addEventListener('click',()=> {
+    nav.classList.toggle('nav-on');
+
+    navBar.forEach((link, index) => {
+      if(link.style.animation) 
+        link.style.animation = '';
+      else
+        link.style.animation=`navSliderFade 0.5s ease forwards ${index/7 + 0.69}s`;
+    });
+
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlider();
