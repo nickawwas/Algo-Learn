@@ -272,7 +272,7 @@ div p {
 .register-wrapper {
     position: relative;
     z-index: 3;
-    padding: 100px;
+    padding: 50px 20px;
     color: #999;
     font-size: 1rem;
 }
@@ -337,7 +337,7 @@ div p {
     position: relative;
     display: block;
     width: 90%;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 30px;
     background: white;
@@ -346,7 +346,7 @@ div p {
 }
 
 .register-block p {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .register-block::before,
