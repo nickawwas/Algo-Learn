@@ -247,24 +247,15 @@ addImgs(algCases, regAlgos, bldAlgos);
 "use strict";
 
 fetch("./cll.json")
-  .then(function(resp) {
-      return resp.json();
-  })
-  .then(function(data) {
-    console.log(data);
+  .then(resp => resp.json())
+  .then(data => {
+    const result = JSON.parse(data);
+    console.log(result);
   });
-  
-// fetch("./cll.json")
-//   .then(content => content.json())
-//   .then(function(data) {
-//     console.log(data);
-//   });
 
-// const result = JSON.parse("cll.json");
-// console.log(result);
- 
-// const result = JSON.parse('cll.json');
-// console.log(result.cll[0].cllAlg)
+console.log("Testing ..." + result.cll[0]);
+
+
 // fetch("./cll.json")
 //   .then(response => response.json())
 //   .then(json => console.log(json));
