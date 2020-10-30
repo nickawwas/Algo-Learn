@@ -34,7 +34,7 @@ header {
     cursor: pointer;
     margin: auto auto auto 0px;
 
-    /* padding: 5px 0px; */
+    padding: 10px 0px;
 
     font-family: 'Dosis';
     letter-spacing: 5px;
@@ -106,12 +106,10 @@ header {
     text-transform: uppercase;
 }
 
-.contact-button {
-    margin-left: 20px;
-    padding: 10px 15px;
-    
+.contact-button {    
     border: none;
     border-radius: 20px;
+    padding: 10px 15px;
     background-color: rgb(8, 146, 180);
 
     cursor: pointer;
@@ -338,13 +336,17 @@ div p {
 .register-block {
     position: relative;
     display: block;
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     padding: 30px;
     background: white;
     box-shadow: 0 0 50px rgba(0,0,0,0.2);
     border-radius: 5px;
+}
+
+.register-block p {
+    padding-bottom: 10px;
 }
 
 .register-block::before,
