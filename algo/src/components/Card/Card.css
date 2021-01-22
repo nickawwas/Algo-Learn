@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap");
+/* Main Container of Sub Containers */
+.cubing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: max-width;
+  color: #12232E;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cubing-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 60%;
+  max-width: 80%;
+  z-index: -2;
+  padding: 2rem 0;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 7px 37px -6px #12343b;
+          box-shadow: 0px 7px 37px -6px #12343b;
+  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  background: linear-gradient(to right, #0083b0, #00b4db);
+}
+
+.algs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 180px;
+  width: 360px;
+  margin: 0.8rem;
+  border-radius: 1rem;
+  background: #8FC1E3;
+}
+
+.alg-case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  height: 180px;
+  border-radius: 1rem;
+  background: lightblue;
+}
+
+.alg-case span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.2rem 0;
+  width: 100%;
+}
+
+.alg-case img {
+  padding-top: 0.1rem;
+  margin: 0.2rem 0;
+  border-radius: 20px;
+}
+
+.alg-notation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.9rem;
+  width: 200px;
+  margin: 0 0.3rem;
+  border-radius: 20px;
+}
+
+.alg-notation span {
+  padding: 0.6rem 0.5rem;
+  border-radius: 10px;
+  background: #F3F3F3;
+}
+
+.alg-moves {
+  margin-bottom: 0.6rem;
+}
+
+/* Sub Container for Each Case */
+/*# sourceMappingURL=Card.css.map */

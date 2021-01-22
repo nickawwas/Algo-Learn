@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap');
+
+$darkBlue: #12232E;
+$darkGreen: #164A41;
+$purePurple:  #3C1874;
+$cloudWhite: #F3F3F3;
+
+$nightShadowBlue: #12343b;
+
+/* Main Container of Sub Containers */
+.cubing {
+    display: flex; 
+    justify-content: center;
+
+    width: max-width;
+
+    color: $darkBlue;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    &-data {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        min-width: 60%;
+        max-width: 80%;
+
+        z-index: -2;
+        padding: 2rem 0;
+
+        border-radius: 50px;
+        box-shadow: 0px 7px 37px -6px $nightShadowBlue;
+
+        background: linear-gradient(to right,#0083b0, #00b4db);
+    }
+}
+
+.algs {
+    display: flex;
+    // justify-content: center;
+    
+    height: 180px;
+    width: 360px;
+
+    margin: 0.8rem;
+
+    border-radius: 1rem;
+    background: #8FC1E3;
+}
+
+.alg-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 180px;
+
+    border-radius: 1rem;
+    background: lightblue;
+
+    span {
+        display: flex;
+        justify-content: center;
+
+        margin: 0.2rem 0;
+        width: 100%;
+    }
+
+    img {
+        padding-top: 0.1rem;
+        margin: 0.2rem 0;
+        border-radius: 20px;
+    }
+}
+
+.alg-notation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 0.9rem;
+
+    width: 200px;
+    margin: 0 0.3rem;    
+
+    border-radius: 20px;
+
+    span {
+        padding: 0.6rem 0.5rem;
+
+        border-radius: 10px;
+        background: $cloudWhite;
+    }
+}
+
+.alg-moves {
+    margin-bottom: 0.6rem;
+}
+
+/* Sub Container for Each Case */
+// .algs { 
+//     height: 180px;
+//     width: 380px;
+
+//     max-width: 90%;
+    
+//     margin: 0.8rem;
+//     padding: 0.6rem 0.3rem 0.6rem 0.9rem;
+
+//     border-radius: 20px;
+//     background-color: #8FC1E3;
+
+//     display: grid;
+//     grid-template-columns: 130px auto; /*250px*/
+//     grid-template-rows: 30px 25px 40px 40px 25px;
+//     grid-template-areas: "algName ."
+//                          "algImg ."
+//                          "algImg algMoves"
+//                          "algImg bldMoves"
+//                          "algImg .";
+
+//     /* font-size: auto; */
+// }
+
+// img {
+//     grid-area: algImg;
+//     border-radius: 20px;
+// }
+
+// div p {
+//     font-size: 18px;
+//     margin-top: auto;
+//     margin-bottom: auto;
+// }
+
+// .alg-case {
+//     grid-area: algName;
+//     text-align: center;
+// }
+
+// .alg-moves {
+//     grid-area: algMoves;
+//     padding-left: 20px;
+// }
+
+// .bld-moves {
+//     grid-area: bldMoves;
+//     padding-left: 20px;
+// }

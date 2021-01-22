@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,500&display=swap');
+
+/* VARIABLES - COLORS */
+$cloudWhite: #F3F3F3;
+$darkGrey: #283747;
+
+$blueMinded: #004E7C;
+$lighterBlue: #007CC7;
+$superLightGrey: #CDCDCD;
+
+$headerFont: 'Barlow Condensed';
+
+/* REMOVE BULLET AND UNDERLINE FROM LISTS */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER SET UP */
+header {
+    display: flex;
+    align-items: center;
+
+    color: $darkGrey;
+    background-color: $cloudWhite;
+
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $superLightGrey;
+}
+
+/* LOGO STYLES */
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $blueMinded;
+
+    margin-left: 2rem;
+}
+
+/* NAVBAR STYLES */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100vw;
+    margin: 1rem 0;
+
+    &-list {
+        display: flex;
+        align-items: center;
+
+        margin-right: 0.8rem;
+    }
+
+    &-items {
+        margin: 0 1.2rem;
+
+        a:hover {
+            color: $blueMinded;
+        }
+
+        a, button {
+            font-weight: 300;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-family: 'Barlow Condensed', sans-serif;
+
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button {
+            border: solid 2px;
+            border-radius: 1rem;
+            
+            color: $darkGrey;
+            border-color: $lighterBlue;
+
+            padding: 8px 20px;
+            transition: 0.3s ease-in-out;
+
+            &:hover, &.current-tab{
+                color: white;
+                border-color: $blueMinded;
+                background-color: $blueMinded;
+            }
+        }
+    }
+}
+
+/* Underlines Current Tab */
+.current-tab {
+    padding-top: 5px;
+    padding-bottom: 2px;
+
+    border-radius: 1px;
+    border-bottom: 3px solid $blueMinded;
+}
+
+.arrow {
+    display: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    header {
+        justify-content: space-between;
+
+        border: none;
+        padding: 0.8rem 0;
+    }
+
+    .nav {
+        position: fixed;
+        //top: 3rem;
+        //right: -100%;
+        top: -100%;
+        left: 0;
+
+        transition: 1.2s ease-in-out;
+        
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $superLightGrey;
+        border-radius: 0 0 20px 20px;
+        background-color: $cloudWhite; 
+
+        &-list {
+            margin: 0;
+            flex-direction: column;
+        }
+
+        &-items {
+            padding: 0;
+            margin: 1.2rem 0;
+        }
+
+        &.open {
+            //right: 0;
+            top: 3rem;
+
+            animation: slideIn 1s; 
+        }
+    }
+
+
+    .arrow { 
+        display: block;
+
+        fill: $lighterBlue;
+        border-radius: 10px;
+        //transform: rotate(180deg);
+        transform: rotate(90deg);
+        transition: 0.6s ease-in-out;
+
+        margin-right: 2rem;
+
+        &.clicked {
+            // transform: rotate(0);
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* 
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+*/
