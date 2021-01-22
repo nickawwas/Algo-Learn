@@ -90,3 +90,5 @@ export const CardData = [
         bldAlgo: "[R' z R': [R' D R, U2]]"
    } 
 ];
+
+export const imgUrl = 'http://www.cubing.net/api/visualcube/?fmt=svg&case=';

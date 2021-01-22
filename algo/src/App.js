@@ -8,9 +8,6 @@ import Blind from "./pages/Blind";
 import Contact from "./pages/Contact/Contact";
 
 import Navbar from './components/Navbar/Navbar';
-import Card from './components/Card/Card';
-
-import {CardData} from "./components/Card/CardData";
 
 import "./App.css"
 
@@ -18,7 +15,6 @@ const App = () => {
   return(
     <Router>
       <Navbar />
-      <Card algos={CardData}/>
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/2x2" component={Mini}/>

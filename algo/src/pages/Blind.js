@@ -1,11 +1,12 @@
 import React from 'react'
 
+import Card from '../components/Card/Card';
+import {CardData, imgUrl} from "../components/Card/CardData";
+
 const Blind = () => {
     return (
-        <div>
-            3-Blind
-        </div>
+        <Card algos={CardData} imgUrl={imgUrl}/>
     )
 }
 
-export default Blind
+export default Blind;

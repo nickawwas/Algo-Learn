@@ -1,10 +1,11 @@
 import React from 'react'
 
+import Card from '../components/Card/Card';
+import {cllData, imgUrl} from "../components/Card/cllData";
+
 const Mini = () => {
     return (
-        <div>
-            Mini (2x2)
-        </div>
+        <Card algos={cllData} imgUrl={imgUrl}/>
     )
 }
 

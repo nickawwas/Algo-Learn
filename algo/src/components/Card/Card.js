@@ -4,9 +4,9 @@ import "./Card.css"
 
 const Card = (props) => {
     
-    const fetchImg = (algo) => {
+    const fetchImg = (img, algo) => {
         const noSpaces = algo.replace(/\s/g, '');
-        return `http://www.cubing.net/api/visualcube/?fmt=svg&case=${noSpaces}`;
+        return `${img}${noSpaces}`;
     };
 
     return (
@@ -17,7 +17,7 @@ const Card = (props) => {
                     <div className='algs'>
                         <div className="alg-case">
                             <span> {alg.algCase} </span>
-                            <img src={fetchImg(alg.regAlgo)} alt="Cube" />
+                            <img src={fetchImg(props.imgUrl, alg.regAlgo)} alt="Cube" />
                         </div>
 
                         <div className="alg-notation">
