@@ -1,7 +1,7 @@
 export const NavData = [
     {
         title: 'Home',
-        path: '/home',
+        path: '/',
     },
     {
         title: '2x2',

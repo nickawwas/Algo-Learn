@@ -1,10 +1,11 @@
 import React from 'react';
 
+import Container from '../../components/Container/Container'
+import {ContainerSections} from '../../components/Container/ContainerData'
+
 const Home = () => {
     return (
-        <div>
-            Hello?
-        </div>
+        <Container sections={ContainerSections}/>
     )
 }
 

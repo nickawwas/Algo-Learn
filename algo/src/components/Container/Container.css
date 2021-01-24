@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap");
+/* Main Container */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #12232E;
+  width: 100vw;
+}
+
+/* Section Containers */
+.mini-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  margin: 1rem;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 7px 22px -7px #12343b;
+          box-shadow: 0px 7px 22px -7px #12343b;
+  background: #8FC1E3;
+}
+
+.container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.6rem;
+  padding: 1.2rem 0 0.6rem;
+}
+
+/* Sub Containers */
+.mini-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.alg-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem;
+  padding: 0.7rem 0.8rem 0 0.8rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 8px -7px #12343b;
+          box-shadow: 0px 7px 8px -7px #12343b;
+  background: lightblue;
+}
+
+.alg-holder:hover {
+  -webkit-transform: trnaslateY(100);
+          transform: trnaslateY(100);
+  background: #0099FF;
+}
+
+.alg-img {
+  border-radius: 20px;
+}
+
+.alg-type {
+  padding: 0.3rem 0;
+}
+/*# sourceMappingURL=Container.css.map */
