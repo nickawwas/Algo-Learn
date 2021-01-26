@@ -116,6 +116,7 @@ header {
     position: fixed;
     top: -100%;
     left: 0;
+    z-index: 0;
     -webkit-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     -webkit-box-orient: vertical;
@@ -144,8 +145,8 @@ header {
   }
   .nav.open {
     top: 3rem;
-    -webkit-animation: slideIn 2s;
-            animation: slideIn 2s;
+    -webkit-animation: slideIn 1.2s;
+            animation: slideIn 1.2s;
   }
   .arrow {
     display: block;
@@ -165,8 +166,8 @@ header {
 
 @-webkit-keyframes slideIn {
   from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(-22rem);
+            transform: translateY(-22rem);
   }
   to {
     -webkit-transform: translateY(0);
@@ -176,8 +177,8 @@ header {
 
 @keyframes slideIn {
   from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(-22rem);
+            transform: translateY(-22rem);
   }
   to {
     -webkit-transform: translateY(0);

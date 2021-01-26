@@ -1,94 +1,202 @@
 export const CardData = [
     {
-        algCase: "ULB-URB (AB)",
-        regAlgo: "Lw' U R' D2 R U' R' D2' R Lw",
-        bldAlgo: "[Lw': [U, R' D2 R]]"
+        case: "ULB-URB (AB)",
+        algs: [ 
+          {
+               alg: "Lw' U R' D2 R U' R' D2' R Lw"
+          },
+          {
+               alg: "[Lw': [U, R' D2 R]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-ULF (AD)",
-        regAlgo: "R' D' R U2 R' D R U R' D' R U' U2' R' D R",
-        bldAlgo: "[R' D' R U2: [R' D R, U]]"
+        case: "ULB-ULF (AD)",
+        algs: [ 
+          {
+               alg: "R' D' R U2 R' D R U R' D' R U' U2' R' D R"
+          },
+          {
+               alg: "[R' D' R U2: [R' D R, U]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-LFU (AF)",
-        regAlgo: "F U2 R' D' R U2' R' D R F'",
-        bldAlgo: "[F: [U2, R' D' R]]"
+        case: "ULB-LFU (AF)",
+        algs: [ 
+          {
+               alg:  "F U2 R' D' R U2' R' D R F'"
+          },
+          {
+               alg: "[F: [U2, R' D' R]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-LDF (AG)",
-        regAlgo: "R' D R U2 R' D' R U2'",
-        bldAlgo: "[R' D R, U2]"
+        case: "ULB-LDF (AG)",
+        algs: [ 
+          {
+               alg:  "R' D R U2 R' D' R U2'"
+          },
+          {
+               alg: "[R' D R, U2]"
+          }
+        ]
    },
    {
-        algCase: "ULB-LBD (AH)",
-        regAlgo: "U' R D' R' U2 R D R' U2' U",
-        bldAlgo: "[U': [R D' R', U2]]"
+        case: "ULB-LBD (AH)",
+        algs: [ 
+          {
+               alg: "U' R D' R' U2 R D R' U2' U"
+          },
+          {
+               alg: "[U': [R D' R', U2]]"
+          }
+        ]
+     },
+   {
+        case: "ULB-FUL (AI)",
+        algs: [ 
+          {
+               alg: "Lw' U2 R' D2 R U2' R' D2' R Lw"
+          },
+          {
+               alg: "[Lw': [U2, R' D2 R]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-FUL (AI)",
-        regAlgo: "Lw' U2 R' D2 R U2' R' D2' R Lw",
-        bldAlgo: "[Lw': [U2, R' D2 R]]"
+        case: "ULB-FDR (AK)",
+        algs: [ 
+          {
+               alg: "D' R' D R U2 R' D' R U2' D"
+          },
+          {
+               alg: "[D': [R' D R, U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-FDR (AK)",
-        regAlgo: "D' R' D R U2 R' D' R U2' D",
-        bldAlgo: "[D': [R' D R, U2]]"
+        case: "ULB-FLD (AL)",
+        algs: [ 
+          {
+               alg: "D' U' R D' R' U2 R D R' U2' U D"
+          },
+          {
+               alg: "[D' U': [R D' R', U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-FLD (AL)",
-        regAlgo: "D' U' R D' R' U2 R D R' U2' U D",
-        bldAlgo: "[D' U': [R D' R', U2]]"
+        case: "ULB-RBU (AN)",
+        algs: [ 
+          {
+               alg: "R D R' R' D2 R U2 R' D2' R U2' R D' R'"
+          },
+          {
+               alg: "[R D R': [R' D2 R, U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-RBU (AN)",
-        regAlgo: "R D R' R' D2 R U2 R' D2' R U2' R D' R'",
-        bldAlgo: "[R D R': [R' D2 R, U2]]"
+        case: "ULB-RDB (AO)",
+        algs: [ 
+          {
+               alg: "U' R D R' U2 R D' R' U2' U"
+          },
+          {
+               alg: "[U': [R D R', U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-RDB (AO)",
-        regAlgo: "U' R D R' U2 R D' R' U2' U",
-        bldAlgo: "[U': [R D R', U2]]"
+        case: "ULB-RFD (AP)",
+        algs: [ 
+          {
+               alg: "R' D' R U2 R' D R U2'"
+          },
+          {
+               alg: "[R' D' R, U2]"
+          }
+        ]
    },
    {
-        algCase: "ULB-RFD (AP)",
-        regAlgo: "R' D' R U2 R' D R U2'",
-        bldAlgo: "[R' D' R, U2]"
+        case: "ULB-BUR (AQ)",
+        algs: [ 
+          {
+               alg: "R' D' U2 R' D R U2' R' D' R D R"
+          },
+          {
+               alg: "[R' D': [U2, R' D R]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-BUR (AQ)",
-        regAlgo: "R' D' U2 R' D R U2' R' D' R D R",
-        bldAlgo: "[R' D': [U2, R' D R]]"
+        case: "ULB-BDL (AS)",
+        algs: [ 
+          {
+               alg: "R' D2 R U2 R' D2' R U2'"
+          },
+          {
+               alg: "[R' D2 R, U2]"
+          }
+        ]
    },
    {
-        algCase: "ULB-BDL (AS)",
-        regAlgo: "R' D2 R U2 R' D2' R U2'",
-        bldAlgo: "[R' D2 R, U2]"
+        case: "ULB-BDR (AT)",
+        algs: [ 
+          {
+               alg: "D U' R D' R' U2 R D R' U2' U D'"
+          },
+          {
+               alg: "[D U': [R D' R', U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-BDR (AT)",
-        regAlgo: "D U' R D' R' U2 R D R' U2' U D'",
-        bldAlgo: "[D U': [R D' R', U2]]"
+        case: "ULB-DFL (AU)",
+        algs: [ 
+          {
+               alg: "R F' R' U' R D R' U2 R D' R' U2' U R F R'"
+          },
+          {
+               alg: "[R F' R' U': [R D R', U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-DFL (AU)",
-        regAlgo: "R F' R' U' R D R' U2 R D' R' U2' U R F R'",
-        bldAlgo: "[R F' R' U': [R D R', U2]]"
+        case: "ULB-DFR (AV)",
+        algs: [ 
+          {
+               alg: "D R D' R' R' D R U2 R' D' R U2' R D R' D'"
+          },
+          {
+               alg: "[D R D' R': [R' D R, U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-DFR (AV)",
-        regAlgo: "D R D' R' R' D R U2 R' D' R U2' R D R' D'",
-        bldAlgo: "[D R D' R': [R' D R, U2]]"
+        case: "ULB-DBR (AW)",
+        algs: [ 
+          {
+               alg: "R D' R' R' D R U2 R' D' R U2' R D R'"
+          },
+          {
+               alg: "[R D' R': [R' D R, U2]]"
+          }
+        ]
    },
    {
-        algCase: "ULB-DBR (AW)",
-        regAlgo: "R D' R' R' D R U2 R' D' R U2' R D R'",
-        bldAlgo: "[R D' R': [R' D R, U2]]"
-   },
-   {
-        algCase: "ULB-DBL (AX)",
-        regAlgo: "R' z R' R' D R U2 R' D' R U2' R z' R",
-        bldAlgo: "[R' z R': [R' D R, U2]]"
+        case: "ULB-DBL (AX)",
+        algs: [ 
+          {
+               alg: "R' z R' R' D R U2 R' D' R U2' R z' R"
+          },
+          {
+               alg: "[R' z R': [R' D R, U2]]"
+          }
+        ]
    } 
 ];
 
-export const imgUrl = 'http://www.cubing.net/api/visualcube/?fmt=svg&case=';
+export const baseUrl = 'http://www.cubing.net/api/visualcube/?fmt=svg&case=';

@@ -11,18 +11,21 @@ const Card = (props) => {
 
     return (
         <div className='cubing'>
-            <div className="cubing-data"> 
-            
-                { props.algos.map(alg => (
+            <div className="cubing-card"> 
+
+                { props.algos.map(algo => (
                     <div className='algs'>
                         <div className="alg-case">
-                            <span> {alg.algCase} </span>
-                            <img src={fetchImg(props.imgUrl, alg.regAlgo)} alt="Cube" />
+                            <span> {algo.case} </span>
+                            <img src={fetchImg(props.baseUrl, algo.algs[0].alg)} alt="Cube" />
                         </div>
 
                         <div className="alg-notation">
-                            <span className="alg-moves"> {alg.regAlgo} </span>
-                            <span className="bld-moves"> {alg.bldAlgo} </span>
+                            { algo.algs.map(alg => (
+                                <span className="alg-moves"> {alg.alg} </span>
+                            ))}
+                            {/* <span className="alg-moves"> {alg.regAlgo} </span>
+                            <span className="bld-moves"> {alg.bldAlgo} </span> */}
                         </div>  
                     </div>
                 ))}

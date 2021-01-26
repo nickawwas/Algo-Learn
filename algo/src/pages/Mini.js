@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Card from '../components/Card/Card';
-import {cllData, imgUrl} from "../components/Card/cllData";
+import {CllData, baseUrl} from "../components/Card/CllData";
 
 const Mini = () => {
     return (
-        <Card algos={cllData} imgUrl={imgUrl}/>
+        <Card algos={CllData} baseUrl={baseUrl}/>
     )
 }
 

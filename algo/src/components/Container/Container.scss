@@ -7,6 +7,29 @@ $cloudWhite: #F3F3F3;
 
 $nightShadowBlue: #12343b;
 
+//For Contact Page
+.font-test-large {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #12343b;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.font-test {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #12343b;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.svgs {
+    padding-left: 1rem;
+}
+//----
+
 /* Main Container */
 .container {
     display: flex;
@@ -25,7 +48,9 @@ $nightShadowBlue: #12343b;
     color: $darkBlue;
 
     width: 100vw;
+    margin-bottom: 2rem;
 }
+
 
 /* Section Containers */
 .mini-container {
@@ -45,7 +70,7 @@ $nightShadowBlue: #12343b;
     justify-content: center;
 
     font-size: 1.6rem;    
-    padding: 1.2rem 0 0.6rem;
+    padding: 1.2rem 0 0.3rem;
 }
 
 /* Sub Containers */
@@ -75,8 +100,8 @@ $nightShadowBlue: #12343b;
         background: lightblue;
 
         &:hover {
-            transform: trnaslateY(100);
-            background: #0099FF;
+            // Animate Holders
+            // background: #0099FF;
         }
     }
 

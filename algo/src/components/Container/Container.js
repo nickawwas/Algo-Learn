@@ -11,7 +11,7 @@ const Container = props => {
                     <div className='mini-sub'>
                         {sec.subSections.map(sub => (
                             <div className="alg-holder">
-                                <img className="alg-img" src="https://cubing.net/api/visualcube/?fmt=svg&view=plan&pzl=2&case=RUR'URU2R'" alt='test' />
+                                <img className="alg-img" src={sub.baseUrl} alt='test' />
                                 <span className="alg-type"> {sub.section} </span>
                             </div>
                         ))}

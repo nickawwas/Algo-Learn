@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Card from '../components/Card/Card';
-import {CardData, imgUrl} from "../components/Card/CardData";
+import {CardData, baseUrl} from "../components/Card/CardData";
 
 const Blind = () => {
     return (
-        <Card algos={CardData} imgUrl={imgUrl}/>
+        <Card algos={CardData} baseUrl={baseUrl}/>
     )
 }
 
