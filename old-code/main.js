@@ -1,4 +1,4 @@
-function addImgs(caseName, algData, bldData) { //caseName
+function addImgs(caseName, algData, bldData) {
   //Main Div
   let addToDiv = document.getElementById("cubing-data");
   
