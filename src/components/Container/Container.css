@@ -1,25 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap");
-.font-test-large {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8rem;
-  color: #12343b;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.font-test {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  color: #12343b;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.svgs {
-  padding-left: 1rem;
-}
-
 /* Main Container */
 .container {
   display: -webkit-box;

@@ -1,0 +1,89 @@
+.contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 540px;
+  height: 220px;
+  padding: 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 22px -7px #12232E;
+          box-shadow: 0px 7px 22px -7px #12232E;
+  background: #8FC1E3;
+}
+
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2rem;
+}
+
+.name {
+  color: #12343b;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.program {
+  color: #12343b;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.profile-pic {
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.svgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.svgs svg {
+  height: 40px;
+  width: 40px;
+  margin: 0 0.2rem;
+  padding: 0 0.5rem;
+}
+
+.svgs svg:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background: lightseagreen;
+}
+/*# sourceMappingURL=Contact.css.map */
