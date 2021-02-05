@@ -11,14 +11,11 @@ const Navbar = () => {
 
     const [currentTab, setCurrentTab] = useState('Home');
     
+    // const storeTab = (tab) => localStorage.setItem('currentTab', tab);
+    
     //Card Component - Get All Algs 
-    //Fix Sass
     //Use Props 
     //Get List of all algs
-
-    //Contact Page
-    // - Use service
-    // Fix Sass
 
     useEffect(() => {
 
@@ -26,7 +23,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <Link to="/" className="logo">  
+            <Link to="/" className="logo" onClick={() => setCurrentTab('Home')}>  
                 algo 
             </Link>   
 

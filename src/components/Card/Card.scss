@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap');
-
-$darkBlue: #12232E;
-$darkGreen: #164A41;
-$purePurple:  #3C1874;
-$cloudWhite: #F3F3F3;
-
-$nightShadowBlue: #12343b;
+/* IMPORT VARIABLES */
+@import "../Navbar/Navbar.scss";
 
 /* Main Container of Sub Containers */
 .cubing {

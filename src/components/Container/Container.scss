@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;900&family=Roboto+Condensed&display=swap');
-
-$darkBlue: #12232E;
-$darkGreen: #164A41;
-$purePurple:  #3C1874;
-$cloudWhite: #F3F3F3;
-
-$nightShadowBlue: #12343b;
+/* IMPORT VARIABLES */
+@import "../Navbar/Navbar.scss";
 
 /* Main Container */
 .container {
@@ -25,7 +19,6 @@ $nightShadowBlue: #12343b;
     color: $darkBlue;
 
     width: 100vw;
-    margin-bottom: 2rem;
 }
 
 
@@ -77,8 +70,8 @@ $nightShadowBlue: #12343b;
         background: lightblue;
 
         &:hover {
-            // Animate Holders
-            // background: #0099FF;
+            cursor: pointer;
+            box-shadow: 0 0 10px $nightShadowBlue;
         }
     }
 
