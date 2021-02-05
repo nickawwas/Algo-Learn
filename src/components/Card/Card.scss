@@ -49,6 +49,7 @@
     margin: 0.8rem;
 
     border-radius: 1rem;
+    box-shadow: 5px 5px 10px -5px $nightShadowBlue;
     background: #8FC1E3;
 }
 
@@ -101,4 +102,20 @@
 
 .alg-moves {
     margin-bottom: 0.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .algs {
+        height: 160px;
+        width: 320px;
+    }
+
+    .alg-case {
+        width: 140px;
+        height: 160px;
+    }
+
+    .alg-notation {
+        width: 180px;
+    }
 }
