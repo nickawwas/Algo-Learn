@@ -318,6 +318,13 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  .cubing-card {
+    font-size: 1rem;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+  }
   .algs {
     height: 160px;
     width: 320px;
@@ -326,8 +333,14 @@ header {
     width: 140px;
     height: 160px;
   }
+  .alg-case span {
+    margin: 0.1rem 0;
+  }
+  .alg-case img {
+    margin: 0.1rem 0;
+  }
   .alg-notation {
-    width: 180px;
+    width: 160px;
   }
 }
 /*# sourceMappingURL=Card.css.map */
