@@ -5,7 +5,7 @@ const Box = props => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="center">
+        <div className="outer-box">
             <div className="containerized">
                 <div className="top">
                     {props.title}
