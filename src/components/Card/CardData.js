@@ -199,4 +199,4 @@ export const CardData = [
    } 
 ];
 
-export const baseUrl = 'http://www.cubing.net/api/visualcube/?fmt=svg&case=';
+export const baseUrl = 'https://www.cubing.net/api/visualcube/?fmt=svg&case=';

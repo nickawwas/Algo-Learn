@@ -16,7 +16,7 @@ export const ContainerSections = [
            },
            {
                 section: "PBL",
-                baseUrl: "http://www.cubing.net/api/visualcube/?fmt=svg&pzl=2&case=R2%20B2%20R2"
+                baseUrl: "https://www.cubing.net/api/visualcube/?fmt=svg&pzl=2&case=R2%20B2%20R2"
             }
         ]
     },
