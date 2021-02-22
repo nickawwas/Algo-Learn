@@ -1,10 +1,8 @@
 # Algo-Learn
 A Cubing Website for Learning Algorithms Using a Cubing API, Written in React and Sass
 
-## Documentation
-
 ## Usage
-<!-- Home Page\
+Home Page\
 ![play-cmd](./img/sb-play.png)
 
 Select Between Possible Pages\
@@ -18,11 +16,10 @@ Learn 3x3 Algs: F2L, OLL, PLL, ZBLS \
 
 Learn 3-BLD Algs: 3-Style for Corners and Edges\
 ![favorites-cmd](./img/sb-favorites.png)
-![favorites-cmd](./img/sb-favorites2.png)
 
 Contact Me Page Available\
 ![favorites-cmd](./img/sb-favorites2.png)
 
 ## Future Releases
 Add Cross Algs\
-![enqueue-cmd](./img/sb-queue.png) -->
+![enqueue-cmd](./img/sb-queue.png)
