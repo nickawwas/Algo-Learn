@@ -19,4 +19,4 @@ Contact Me Page Available to Check my Github Profile, Repo, LinkedIn, and Email 
 
 ## Future Releases
 Add Cross Algs\
-Finish 3Bld Algs\
+Finish 3Bld Algs
