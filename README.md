@@ -14,7 +14,7 @@ Learn 3x3 Algs: F2L, OLL, PLL, ZBLS \
 Learn 3-BLD Algs: 3-Style for Corners and Edges\
 ![sample-3bld-algs](./imgs/sample3Bld.png)
 
-Contact Me Page Available to Check the Repo, my Github, LinkedIn, and Email Me\
+Contact Me Page Available to Check my Github Profile, Repo, LinkedIn, and Email Me\
 ![contact-page](./imgs/contactPage.png)
 
 ## Future Releases
