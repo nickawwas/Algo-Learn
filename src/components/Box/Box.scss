@@ -27,10 +27,9 @@
 }
 
 .box {
+    cursor: pointer;
     fill: $blueMinded;
     border-radius: 10px;
-
-    cursor: pointer;
 
     transform: rotate(90deg);
     transition: 0.3s ease-in-out;
@@ -38,8 +37,8 @@
     &-opened {
         cursor: pointer;
         fill: $lighterBlue;
-        
         border-radius: 10px;
+
         transform: rotate(-90deg);
         transition: 0.3s ease-in-out;
     }

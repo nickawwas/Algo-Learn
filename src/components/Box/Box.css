@@ -113,10 +113,10 @@ header {
     padding: 0.8rem 0;
   }
   .nav {
-    position: fixed;
+    position: relative;
+    z-index: 2;
     top: -100%;
     left: 0;
-    z-index: 0;
     -webkit-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     -webkit-box-orient: vertical;
@@ -231,9 +231,9 @@ header {
 }
 
 .box {
+  cursor: pointer;
   fill: #004E7C;
   border-radius: 10px;
-  cursor: pointer;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: 0.3s ease-in-out;
