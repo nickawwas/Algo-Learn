@@ -114,10 +114,14 @@ header {
     border: none;
     padding: 0.8rem 0;
   }
+  header a, header svg {
+    position: relative;
+    z-index: 2;
+  }
   .nav {
     position: absolute;
-    z-index: -1;
-    top: -40%;
+    z-index: 1;
+    top: -100%;
     left: 0;
     -webkit-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
@@ -147,7 +151,6 @@ header {
   }
   .nav.open {
     top: 3rem;
-    opacity: 1;
     -webkit-animation: slideIn 1.2s;
             animation: slideIn 1.2s;
   }
@@ -300,5 +303,37 @@ header {
   font-weight: 250;
   font-size: 1.25rem;
   padding: 0.3rem 0;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+  .mini-sub {
+    padding: 0 0.25rem 0.75rem 0.25rem;
+  }
+  .alg-img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+/* SMALL DEVICES */
+@media only screen and (max-width: 360px) {
+  .container-title {
+    font-size: 1.7rem;
+  }
+  .mini-container {
+    border-radius: 40px;
+  }
+  .mini-sub {
+    padding: 0 0.125rem 0.8rem 0.125rem;
+  }
+  .alg-img {
+    height: 100px;
+    width: 100px;
+  }
+  .alg-holder {
+    margin: 0.4rem;
+    padding: 0.6rem 0.6rem 0 0.6rem;
+  }
 }
 /*# sourceMappingURL=Container.css.map */

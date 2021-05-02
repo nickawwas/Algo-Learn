@@ -114,9 +114,13 @@ header {
     border: none;
     padding: 0.8rem 0;
   }
-  .nav {
+  header a, header svg {
     position: relative;
     z-index: 2;
+  }
+  .nav {
+    position: absolute;
+    z-index: 1;
     top: -100%;
     left: 0;
     -webkit-transition: 1.2s ease-in-out;
@@ -321,6 +325,7 @@ header {
   margin-bottom: 0.6rem;
 }
 
+/* MOBILE VIEW */
 @media only screen and (max-width: 600px) {
   .cubing-card {
     font-size: 1rem;
@@ -334,17 +339,42 @@ header {
     width: 320px;
   }
   .alg-case {
-    width: 140px;
+    width: 130px;
     height: 160px;
   }
   .alg-case span {
     margin: 0.1rem 0;
   }
   .alg-case img {
+    width: 120px;
+    height: 120px;
     margin: 0.1rem 0;
   }
   .alg-notation {
-    width: 160px;
+    width: 170px;
+  }
+}
+
+/* SMALL DEVICES */
+@media only screen and (max-width: 360px) {
+  .algs {
+    height: 140px;
+    width: 290px;
+  }
+  .alg-case {
+    width: 122px;
+    height: 140px;
+  }
+  .alg-case span {
+    margin: 0.1rem 0;
+  }
+  .alg-case img {
+    width: 105px;
+    height: 105px;
+    margin: 0.1rem 0;
+  }
+  .alg-notation {
+    width: 140px;
   }
 }
 /*# sourceMappingURL=Card.css.map */

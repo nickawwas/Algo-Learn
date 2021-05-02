@@ -87,3 +87,46 @@
         padding: 0.3rem 0;
     }
 }
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+    .mini-sub {
+        padding: 0 0.25rem 0.75rem 0.25rem;
+    }
+
+    .alg {
+        &-img{
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+}
+
+/* SMALL DEVICES */
+@media only screen and (max-width: 360px) {
+    .container-title {
+        font-size: 1.7rem;
+    }
+
+    .mini-container {
+        border-radius: 40px;
+    }
+
+    .mini-sub {
+        padding: 0 0.125rem 0.8rem 0.125rem;
+    }
+
+    .alg {
+        &-img{
+            height: 100px;
+            width: 100px;
+        }
+
+        &-holder {
+            margin: 0.4rem;
+            padding: 0.6rem 0.6rem 0 0.6rem;
+        }
+    }
+
+}
