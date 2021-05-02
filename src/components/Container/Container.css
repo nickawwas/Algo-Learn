@@ -115,9 +115,9 @@ header {
     padding: 0.8rem 0;
   }
   .nav {
-    position: relative;
-    z-index: 2;
-    top: -100%;
+    position: absolute;
+    z-index: -1;
+    top: -40%;
     left: 0;
     -webkit-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
@@ -147,6 +147,7 @@ header {
   }
   .nav.open {
     top: 3rem;
+    opacity: 1;
     -webkit-animation: slideIn 1.2s;
             animation: slideIn 1.2s;
   }

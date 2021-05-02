@@ -118,16 +118,18 @@ header {
 
         border: none;
         padding: 0.8rem 0;
+
+        a, svg {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     .nav {
-        position: relative;
-        z-index: 2;
-        //top: 3rem;
-        //right: -100%;
+        position: absolute;
+        z-index: 1;
         top: -100%;
-        left: 0;
-        
+        left: 0;    
 
         transition: 1.2s ease-in-out;
         
@@ -152,11 +154,8 @@ header {
         }
 
         &.open {
-            //right: 0;
             top: 3rem;
-
             animation: slideIn 1.2s;
-            //transition: 1.2s ease-in-out;
         }
     }
 
