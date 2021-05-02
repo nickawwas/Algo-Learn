@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
 .contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,6 +6,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-style: normal;
+  font-family: 'Antonio', sans-serif;
 }
 
 .contact-container {
@@ -43,23 +46,19 @@
 .name {
   color: #12343b;
   font-weight: 400;
-  font-style: normal;
-  font-size: 1.6rem;
-  font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .program {
   color: #12343b;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
 }
 
 .profile-pic {
-  height: 160px;
+  height: 170px;
   border-radius: 50%;
   border: 3px solid white;
 }
@@ -71,7 +70,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 
 .svgs p {
@@ -104,19 +103,19 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 300px;
-    height: 420px;
+    height: 440px;
     padding: 1rem 0;
-    padding-top: 1.8rem;
+    padding-top: 1.6rem;
   }
   .contact-details {
     padding: 0 1rem;
-    margin-top: 1.8rem;
+    margin-top: 1.6rem;
   }
   .profile-pic {
     height: 180px;
   }
   .name {
-    margin: 0.4rem;
+    margin: 0.8rem;
   }
   .svgs {
     margin-top: 1.8rem;
