@@ -1,5 +1,6 @@
 /* IMPORT VARIABLES */
 @import "../Navbar/Navbar.scss";
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
 
 /* Main Container of Sub Containers */
 .cubing {
@@ -68,6 +69,10 @@
     span {
         display: flex;
         justify-content: center;
+
+        font-weight: 250;
+        font-size: 1.25rem;
+        font-family: 'Antonio', sans-serif;
 
         margin: 0.2rem 0;
         width: 100%;

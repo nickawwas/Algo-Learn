@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Card from '../components/Card/Card';
-import {CardData, baseUrl} from "../components/Card/CardData";
+import { baseUrl } from "../components/Card/CardData";
 import {algsLUB, algsUBL, algsURB, algsLFU, algsULF, algsLDF} from "../components/Card/bldCorners";
 import Box from "../components/Box/Box";
 
