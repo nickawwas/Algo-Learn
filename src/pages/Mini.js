@@ -1,6 +1,6 @@
 import React, {lazy, Suspense} from 'react'
 
-import {CllData, Eg1Data, Eg2Data, baseUrl} from "../components/Card/MiniData";
+import {CllData, Eg1Data, Eg2Data, PBLData, baseUrl, sideViewUrl} from "../components/Card/MiniData";
 import Box from '../components/Box/Box';
 import Loading from "./Loading";
 
@@ -24,7 +24,7 @@ const Mini = () => {
             </Box>
 
             <Box title="PBL">
-                In Progress
+                <Card algos={PBLData} baseUrl={sideViewUrl}/>
             </Box>
         </Suspense>
         

@@ -4,6 +4,7 @@ import { baseUrl } from "../components/Card/CardData";
 import {algsLUB, algsUBL, algsURB, algsLFU, algsULF, algsLDF, algsLBD, algsFUL, algsFDR, algsFLD, algsRBU, algsRDB, algsRFD, algsBUR, algsBLU, algsBDL, algsBRD, algsDFL, algsDRF, algsDBR, algsDLB} from "../components/Card/bldCorners";
 import Box from "../components/Box/Box";
 import Loading from './Loading';
+import { algsUB } from '../components/Card/bldEges';
 
 /* Lazy Load Pages */
 const Card = lazy(() =>  import('../components/Card/Card'));
@@ -100,12 +101,8 @@ const Blind = () => {
 
             <div style={{display: "flex", margin: "0 12% 1rem", paddingRight: "10%", fontSize: `1.8rem`, borderBottom: "2px solid #007CC7", fontWeight: "200", fontFamily: "Antonio, sans-serif"}}> EDGES </div>
             
-            <Box title="UBL (A)">
-                <Card algos={algsUBL} baseUrl={baseUrl} />
-            </Box>
-
-           <Box title="URB (B)">
-                <Card algos={algsURB} baseUrl={baseUrl} />
+            <Box title="UB (A)">
+                <Card algos={algsUB} baseUrl={baseUrl} />
             </Box>
 
             {/* ADD MARGIN TO BOTTOM */}
