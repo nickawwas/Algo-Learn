@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import {NavData} from './NavData';
@@ -12,14 +12,6 @@ const Navbar = () => {
     const [currentTab, setCurrentTab] = useState('Home');
     
     // const storeTab = (tab) => localStorage.setItem('currentTab', tab);
-    
-    //Card Component - Get All Algs 
-    //Use Props 
-    //Get List of all algs
-
-    useEffect(() => {
-
-    }, []);
 
     return (
         <header>

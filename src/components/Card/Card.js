@@ -17,7 +17,7 @@ const Card = (props) => {
                     <div className='algs'>
                         <div className="alg-case">
                             <span> {algo.case} </span>
-                            <img src={fetchImg(props.baseUrl, algo.algs[0].alg)} loading="lazy" alt="Cube" />
+                            <img src={fetchImg(props.baseUrl, algo.algs[0].alg)} alt="Cube" />
                         </div>
 
                         <div className="alg-notation">

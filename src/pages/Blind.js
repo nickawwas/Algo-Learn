@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 
-import Card from '../components/Card/Card';
 import { baseUrl } from "../components/Card/CardData";
 import {algsLUB, algsUBL, algsURB, algsLFU, algsULF, algsLDF} from "../components/Card/bldCorners";
 import Box from "../components/Box/Box";
 
+/* Lazy Load Pages */
+const Card = lazy(() =>  import('../components/Card/Card'));
+//import Card from "../components/Card/Card";
+
 const Blind = () => {
     return (
-        <>
+        <Suspense fallback={<div style={{display: "flex", justifyContent: "center"}}> Loading ... </div>}>
             <Box title="UBL (A)">
                 <Card algos={algsUBL} baseUrl={baseUrl} />
             </Box>
@@ -35,7 +38,7 @@ const Blind = () => {
             <Box title="LDB (H)">
                 <Card algos={algsLDF} baseUrl={baseUrl} />
             </Box>
-        </>
+        </Suspense>
     )
 }
 
