@@ -13,8 +13,8 @@ const Card = (props) => {
         <div className='cubing'>
             <div className="cubing-card"> 
 
-                { props.algos.map(algo => (
-                    <div className='algs' key={algo.case}>
+                { props.algos.map((algo, key) => (
+                    <div className='algs' key={`${algo.case} ${key}`}>
                         <div className="alg-case">
                             <span> {algo.case} </span>
                             <img src={fetchImg(props.baseUrl, algo.algs[0].alg)} alt="Cube" />
