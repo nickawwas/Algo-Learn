@@ -343,6 +343,7 @@ header {
     height: 160px;
   }
   .alg-case span {
+    font-size: 1rem;
     margin: 0.1rem 0;
   }
   .alg-case img {
@@ -352,6 +353,13 @@ header {
   }
   .alg-notation {
     width: 170px;
+  }
+  .alg-notation span {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .alg-moves {
+    margin-bottom: 0.5rem;
   }
 }
 

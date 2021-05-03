@@ -112,9 +112,13 @@ header {
     border: none;
     padding: 0.8rem 0;
   }
-  .nav {
+  header a, header svg {
     position: relative;
     z-index: 2;
+  }
+  .nav {
+    position: absolute;
+    z-index: 1;
     top: -100%;
     left: 0;
     -webkit-transition: 1.2s ease-in-out;
