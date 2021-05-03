@@ -4,6 +4,7 @@ import Box from "../components/Box/Box";
 
 import { baseUrl } from "../components/Card/CardData";
 import { ollAlgs, pllAlgs } from "../components/Card/regularData";
+import Loading from "./Loading";
 
 /* Lazy Load Pages */
 const Card = lazy(() =>  import('../components/Card/Card'));
@@ -11,7 +12,7 @@ const Card = lazy(() =>  import('../components/Card/Card'));
 
 const Regular = () => {
   return (
-    <Suspense fallback={<div style={{display: "flex", justifyContent: "center"}}> Loading ... </div>}>
+    <Suspense fallback={<Loading/>}>
         <Box title="F2L">
             IN PROGRESS
         </Box>

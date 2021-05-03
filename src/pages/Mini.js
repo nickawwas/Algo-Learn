@@ -2,6 +2,7 @@ import React, {lazy, Suspense} from 'react'
 
 import {CllData, Eg1Data, Eg2Data, baseUrl} from "../components/Card/MiniData";
 import Box from '../components/Box/Box';
+import Loading from "./Loading";
 
 /* Lazy Load Pages */
 const Card = lazy(() =>  import('../components/Card/Card'));
@@ -9,7 +10,7 @@ const Card = lazy(() =>  import('../components/Card/Card'));
 
 const Mini = () => {
     return (
-        <Suspense fallback={<div style={{display: "flex", justifyContent: "center"}}> Loading ... </div>}>
+        <Suspense fallback={<Loading/>}>
             <Box title="CLL">
                 <Card algos={CllData} baseUrl={baseUrl}/>
             </Box>
