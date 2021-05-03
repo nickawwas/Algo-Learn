@@ -1,7 +1,7 @@
 import React, {lazy, Suspense} from 'react'
 
 import { baseUrl } from "../components/Card/CardData";
-import {algsLUB, algsUBL, algsURB, algsLFU, algsULF, algsLDF} from "../components/Card/bldCorners";
+import {algsLUB, algsUBL, algsURB, algsLFU, algsULF, algsLDF, algsLBD, algsFUL, algsFDR, algsFLD} from "../components/Card/bldCorners";
 import Box from "../components/Box/Box";
 import Loading from './Loading';
 
@@ -12,6 +12,8 @@ const Card = lazy(() =>  import('../components/Card/Card'));
 const Blind = () => {
     return (
         <Suspense fallback={<Loading/>}>
+            <div style={{display: "flex", margin: "0 12% 1rem", paddingRight: "10%", fontSize: `1.8rem`, borderBottom: "2px solid #007CC7", fontWeight: "200", fontFamily: "Antonio, sans-serif"}}> CORNERS </div>
+
             <Box title="UBL (A)">
                 <Card algos={algsUBL} baseUrl={baseUrl} />
             </Box>
@@ -36,9 +38,24 @@ const Blind = () => {
                 <Card algos={algsLDF} baseUrl={baseUrl} />
             </Box>
 
-            <Box title="LDB (H)">
-                <Card algos={algsLDF} baseUrl={baseUrl} />
+            <Box title="LBD (H)">
+                <Card algos={algsLBD} baseUrl={baseUrl} />
             </Box>
+
+            <Box title="FUL (I)">
+                <Card algos={algsFUL} baseUrl={baseUrl} />
+            </Box>
+
+            <Box title="FDR (K)">
+                <Card algos={algsFDR} baseUrl={baseUrl} />
+            </Box>
+
+            <Box title="FLD (L)">
+                <Card algos={algsFLD} baseUrl={baseUrl} />
+            </Box>
+
+            {/*  N - O - P - E*/}
+
         </Suspense>
     )
 }

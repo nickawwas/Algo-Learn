@@ -1077,7 +1077,7 @@ export const algsLDF = [
               alg: "D R' F2 R D' R' D F2 D' R" 
          },
          {     
-              alg: "D R' F2 R D' R' D F2 D' R"
+              alg: "-"
         } 
       ]
   },
@@ -1204,3 +1204,662 @@ export const algsLDF = [
   }
 ];
 
+export const algsLBD = [
+  {
+       case:"LBD-UBL",
+       algs: [{
+          alg:"U' U2 R D' R' U2' R D R' U"
+        },{
+           alg:"[U': [U2, R D' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-URB",
+       algs: [{
+          alg:"R D' R' U' R D R' U"
+        },{
+           alg:"[R D' R', U']" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-ULF",
+       algs: [{
+          alg:"U' U' R D' R' U R D R' U"
+        },{
+           alg:"[U': [U', R D' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-LUB",
+       algs: [{
+          alg:"z U U R' D' R U' R' D R U' z'"
+        },{
+           alg:"[z U: [U, R' D' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-LFU",
+       algs: [{
+          alg:"z U2 R' D' R U2' R' D R z'"
+        },{
+           alg:"[z: [U2, R' D' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-LDF",
+       algs: [{
+          alg:"z' D' R U' R' D R U R' z"
+        },{
+           alg:"[z': [D', R U' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-FUL",
+       algs: [{
+          alg:"Lw' U2 R' D R U2' R' D' R Lw"
+        },{
+           alg:"[Lw': [U2, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-FDR",
+       algs: [{
+          alg:"U R U' R D' R' U' R D R' U U R' U'"
+        },{
+           alg:"[U R U': [R D' R', U']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-FLD",
+       algs: [{
+          alg:"D2 R U R' D' R U' R' D D2'"
+        },{
+           alg:"[D2: [R U R', D']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-RBU",
+       algs: [{
+          alg:"U R R D' R' U2 R D R' U2' R' U'"
+        },{
+           alg:"[U R: [R D' R', U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-RDB",
+       algs: [{
+          alg:"R D' R' U' R D2 R' U R D2' D R'"
+        },{
+           alg:"[R D': [R' U' R, D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-RFD",
+       algs: [{
+          alg:"D2 R U R' D2' R U' R'"
+        },{
+           alg:"[D2, R U R']" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-BUR",
+       algs: [{
+          alg:"U' L U R U' L' U R'"
+        },{
+           alg:"[U' L U, R]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-BLU",
+       algs: [{
+          alg:"U2 R R D' R' U R D R' U' R' U2'"
+        },{
+           alg:"[U2 R: [R D' R', U]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-BRD",
+       algs: [{
+          alg:"D' D' R U R' D R U' R' D"
+        },{
+           alg:"[D': [D', R U R']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-DFL",
+       algs: [{
+          alg:"R D R' D R U R' D2 R U' R' D2' D' R D' R'"
+        },{
+           alg:"[R D R' D: [R U R', D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-DRF",
+       algs: [{
+          alg:"D2 R R D' R' U' R D R' U R' D2'"
+        },{
+           alg:"[D2 R: [R D' R', U']]" 
+         }
+       ] 
+  },
+  {
+       case:"LBD-DBR",
+       algs: [{
+          alg:"R D' R' R' D R U R' D' R U' R D R'"
+        },{
+           alg:"[R D' R’: [R’ D R, U]]" 
+         }
+       ] 
+  }
+];
+
+export const algsFUL = [
+  {
+       case:"FUL-UBL",
+       algs: [{
+          alg:"Lw' R' D2 R U2 R' D2' R U2' Lw"
+        },{
+           alg:"[Lw': [R' D2 R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-URB",
+       algs: [{
+          alg:"R R D R' U2 R D' R' U2' R'"
+        },{
+           alg:"[R: [R D R', U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-LUB",
+       algs: [{
+          alg:"Lw' U U2 R D' R' U2' R D R' U' Lw"
+        },{
+           alg:"[Lw' U: [U2, R D' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-LDF",
+       algs: [{
+          alg:"R' D F2' D' R D R' F2' R D'"
+        },{
+           alg:"-" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-LBD",
+       algs: [{
+          alg:"Lw' R' D R U2 R' D' R U2' Lw"
+        },{
+           alg:"[Lw': [R' D R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-FDR",
+       algs: [{
+          alg:"D' R' D F2 D' R D R' F2 R"
+        },{
+           alg:"-" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-FLD",
+       algs: [{
+          alg:"R U R' D R U2 R' D' R U2' U' R'"
+        },{
+           alg:"[R U: [R' D R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-RBU",
+       algs: [{
+          alg: "L' D L2 D' L2' U L2 D L2' D' L2 U' L'"
+        }, {
+          alg:"[L: [L2' D L2 D' L2', U]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-RDB",
+       algs: [{
+          alg:"Lw' U' R D R' U2 R D' R' U2' U Lw"
+        },{
+           alg:"[Lw' U': [R D R', U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-RFD",
+       algs: [{
+          alg:"Lw' R' D' R U2 R' D R U2' Lw"
+        },{
+           alg:"[Lw': [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-BUR",
+       algs: [{
+          alg:"R D' U R' D' R U2 R' D R U2' U' D R'"
+        },{
+           alg:"[R D'U: [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-BLU",
+       algs: [{
+          alg:"R U R' D' U2 R' D R U2' R' D' R D R U' R'"
+        },{
+           alg:"[R U R' D': [U2, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-BDL",
+       algs: [{
+          alg:"D R' D F2 D' R D R' F2 R D2"
+        },{
+           alg:"-" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-BRD",
+       algs: [{
+          alg:"R U R' D' R U2 R' D R U2' U' R'"
+        },{
+           alg:"[R U: [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-DFL",
+       algs: [{
+          alg:"R U D R' D' R U2 R' D R U2' D' U' R'"
+        },{
+           alg:"[R UD: [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-DRF",
+       algs: [{
+          alg:"D' R U D R' D' R U2 R' D R U2' D' U' R' D"
+        },{
+           alg:"[D' R UD: [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-DBR",
+       algs: [{
+          alg:"D R R D' R' U2 R D R' U2' R' D'"
+        },{
+           alg:"[D R: [R D' R', U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FUL-DLB",
+       algs: [{
+          alg:"R R D' R' U2 R D R' U2' R'"
+        },{
+           alg:"[R: [R D' R', U2]]" 
+         }
+       ] 
+  }
+];
+
+export const algsFDR = [
+  {
+       case:"FDR-UBL",
+       algs: [{
+          alg:"D' U2 R' D R U2' R' D' R D"
+        },{
+           alg:"[D': [U2, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-URB",
+       algs: [{
+          alg:"D' U R' D R U' R' D' R D"
+        },{
+           alg:"[D': [U, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-ULF",
+       algs: [{
+          alg:"D' U' R' D R U R' D' R D"
+        },{
+           alg:"[D': [U', R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-LUB",
+       algs: [{
+          alg:"R U R' U' R' D' R U R' D R R U' R'"
+        },{
+           alg:"[R U R': [U', R' D' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-LFU",
+       algs: [{
+          alg:"z R U R' D R U' R' D' z'"
+        },{
+           alg:"[z: [R U R', D]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-LDF",
+       algs: [{
+          alg:"U R U' R' D R U R' D' U'"
+        },{
+           alg:"[U: [R U' R', D]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-LBD",
+       algs: [{
+          alg:"Lw' U R U' R' D R U R' D' U' Lw"
+        },{
+           alg:"[Lw' U: [R U' R', D]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-FUL",
+       algs: [{
+          alg:"R' F2' R D' R' D F2' D' R D"
+        },{
+           alg:"-" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-FLD",
+       algs: [{
+          alg:"z R U' R' D R U R' D' z'"
+        },{
+           alg:"[z: [R U' R', D]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-RBU",
+       algs: [{
+          alg:"U' R' U R D R' U2 R D' R' U2' U' R U"
+        },{
+           alg:"[U' R' U: [R D R', U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-RDB",
+       algs: [{
+          alg:"U R U' R' D' R U R' D U'"
+        },{
+           alg:"[U: [R U' R', D']]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-BUR",
+       algs: [{
+          alg:"D' R' U R U' R' D R U R' D' U' R D"
+        },{
+           alg:"[D' R' U: [R U' R', D]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-BLU",
+       algs: [{
+          alg:"Lw D' U' R' D R U R' D' R D Lw'"
+        },{
+           alg:"[Lw D': [U', R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-BDL",
+       algs: [{
+          alg:"U R U' R' D2 R U R' D2' U'"
+        },{
+           alg:"[U: [R U' R', D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-BRD",
+       algs: [{
+          alg:"D R D R' U' R D2 R' U R D2' D' R' D'"
+        },{
+           alg:"[D R D: [R' U' R, D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-DFL",
+       algs: [{
+          alg:"U R U' F2 U R' U' R F2 R'"
+        },{
+           alg:" - " 
+         }
+       ] 
+  },
+  {
+       case:"FDR-DBR",
+       algs: [{
+          alg:"U R D' U' R' D R U R' D' R D R' U'"
+        },{
+           alg:"[U R D': [U', R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FDR-DLB",
+       algs: [{
+          alg:"z R U2 R' D R U2' R' D' z'"
+        },{
+           alg:"[z: [R U2 R', D]]" 
+         }
+       ] 
+  }
+];
+
+export const algsFLD = [
+  {
+       case:"FLD-UBL",
+       algs: [{
+          alg:"D' U' U2 R D' R' U2' R D R' U D"
+        },{
+           alg:"[D' U': [U2, R D' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-URB",
+       algs: [{
+          alg:"D U R' D' R U' R' D R D'"
+        },{
+           alg:"[D: [U, R' D' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-ULF",
+       algs: [{
+          alg:"D U' R' D' R U R' D R D'"
+        },{
+           alg:"[D: [U', R' D' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-LUB",
+       algs: [{
+          alg:"R U U R' D R U' R' D' R U' R'"
+        },{
+           alg:"[R U: [U, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-LFU",
+       algs: [{
+          alg:"D R' U' R U R' D' R U' R' D U R D'"
+        },{
+           alg:"[D R' U': [R U R', D']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-LBD",
+       algs: [{
+          alg:"D2 D' R U R' D R U' R' D2'"
+        },{
+           alg:"[D2: [D', R U R']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-FUL",
+       algs: [{
+          alg:"R U U2 R' D R U2' R' D' R U' R'"
+        },{
+           alg:"[R U: [U2, R' D R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-FDR",
+       algs: [{
+          alg:"z D R U' R' D' R U R' z'"
+        },{
+           alg:"[z: [D, R U' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-RBU",
+       algs: [{
+          alg:"F' U R' D' R U2 R' D R U2' U' F"
+        },{
+           alg:"[F' U: [R' D' R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-RDB",
+       algs: [{
+          alg:"R D D R' U' R D' R' U R D' R'"
+        },{
+           alg:"[R D: [D, R' U' R]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-RFD",
+       algs: [{
+          alg:"D R U R' D' R U' R'"
+        },{
+           alg:"[D, R U R']" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-BUR",
+       algs: [{
+          alg:"z D' R U' R' D R U R' z'"
+        },{
+           alg:"[z: [D', R U' R']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-BLU",
+       algs: [{
+          alg:"D x' R U' R' D' R U R' D x D'"
+        },{
+           alg:"[D x': [R U' R', D']]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-BDL",
+       algs: [{
+          alg:"D' R D' R' U' R D2 R' U R D2' D R' D"
+        },{
+           alg:"[D' R D': [R' U' R, D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-BRD",
+       algs: [{
+          alg:"D R U R' D2 R U' R' D2' D'"
+        },{
+           alg:"[D: [R U R', D2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-DRF",
+       algs: [{
+          alg:"R U' R' R' D R U2 R' D' R U2' R U R'"
+        },{
+           alg:"[R U' R': [R' D R, U2]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-DBR",
+       algs: [{
+          alg:"D R R D' R' U' R D R' U R' D'"
+        },{
+           alg:"[D R: [R D' R', U’]]" 
+         }
+       ] 
+  },
+  {
+       case:"FLD-DLB",
+       algs: [{
+          alg:"z' U' R U R' D' R U' R' D U z"
+        },{
+           alg:"[z' U': [R U R', D']]" 
+         }
+       ] 
+  }
+];

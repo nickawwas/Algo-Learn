@@ -14,18 +14,16 @@ const Card = (props) => {
             <div className="cubing-card"> 
 
                 { props.algos.map(algo => (
-                    <div className='algs'>
+                    <div className='algs' key={algo.case}>
                         <div className="alg-case">
                             <span> {algo.case} </span>
                             <img src={fetchImg(props.baseUrl, algo.algs[0].alg)} alt="Cube" />
                         </div>
 
                         <div className="alg-notation">
-                            { algo.algs.map(alg => (
-                                <span className="alg-moves"> {alg.alg} </span>
+                            { algo.algs.map(algz => (
+                                <span className="alg-moves" key={algz.alg}> {algz.alg} </span>
                             ))}
-                            {/* <span className="alg-moves"> {alg.regAlgo} </span>
-                            <span className="bld-moves"> {alg.bldAlgo} </span> */}
                         </div>  
                     </div>
                 ))}

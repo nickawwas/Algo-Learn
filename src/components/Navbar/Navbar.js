@@ -21,9 +21,9 @@ const Navbar = () => {
 
             <nav className={navState ? 'nav open' : 'nav'}>
                 <ul className="nav-list" onClick={toggleNav}>
-                    {NavData.map(item => {
+                    {NavData.map((item, key) => {
                         return (
-                            <li className={currentTab === item.title ? 'nav-items current-tab' : 'nav-items'} onClick={() => setCurrentTab(item.title)}>
+                            <li className={currentTab === item.title ? 'nav-items current-tab' : 'nav-items'} key={key} onClick={() => setCurrentTab(item.title)}>
                                 <Link to={item.path}> 
                                     {item.title}
                                 </Link>
