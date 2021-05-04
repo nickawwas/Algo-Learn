@@ -95,10 +95,10 @@ header {
 
 /* Underlines Current Tab */
 .current-tab {
-  padding-top: 5px;
-  padding-bottom: 2px;
   border-radius: 1px;
   border-bottom: 3px solid #004E7C;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
 .arrow {
@@ -149,11 +149,15 @@ header {
     padding: 0;
     margin: 1.2rem 0;
   }
+  .nav-items a {
+    padding: 1rem 1.5rem;
+  }
   .nav.open {
     top: 3rem;
     -webkit-animation: slideIn 1.2s;
             animation: slideIn 1.2s;
   }
+  /* ANIMATE OPEN AND CLOSE NAV */
   .arrow {
     display: block;
     fill: #007CC7;
@@ -192,16 +196,6 @@ header {
   }
 }
 
-/* 
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-*/
 /* Main Container of Sub Containers */
 .cubing {
   display: -webkit-box;
