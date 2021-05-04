@@ -1,3 +1,7 @@
+/* Box Titles */
+export const cornerCases = ["UBL (A)", "URB (B)", "ULF (D)", "LUB (E)", "LFU (F)", "LDF (G)", "LBD (H)", "FUL (I)", "FDR (K)", "FLD (L)", "RBU (N)", "RDB (O)", "RFD (P)", "BUR (Q)", "BLU (R)", "BDL (S)", "BRD (T)", "DFL (U)", "DRF (V)", "DBR (W)", "DLB (X)"];
+
+/* Individual Alg Objects */
 export const algsUBL = [
   {
     case: "UBL-URB",
@@ -4218,3 +4222,6 @@ export const algsDLB = [
     ],
   },
 ];
+
+/* Corner Algs */
+export const cornerAlgos = [algsUBL, algsURB, algsULF, algsLUB, algsLFU, algsLDF, algsLBD, algsFUL, algsFDR, algsFLD, algsRBU, algsRDB, algsRFD, algsBUR, algsBLU, algsBDL, algsBRD, algsDFL, algsDRF, algsDBR, algsDLB];

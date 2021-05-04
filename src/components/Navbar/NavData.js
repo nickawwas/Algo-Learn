@@ -14,5 +14,9 @@ export const NavData = [
     {
         title: '3-Bld',
         path: '/3-bld',
+    },
+    {
+        title: 'Stars',
+        path: '/saved',
     }
 ];

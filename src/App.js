@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import Mini from "./pages/Mini";
 import Regular from "./pages/Regular";
 import Blind from "./pages/Blind";
+import Saved from './pages/Saved';
 
 import "./App.css"
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/2x2" component={Mini}/>
           <Route path="/3x3" component={Regular}/>
           <Route path="/3-bld" component={Blind}/>
+          <Route path="/saved" component={Saved}/>
           <Route path="/contact" component={Contact}/>
         </Switch>
     </Router>
