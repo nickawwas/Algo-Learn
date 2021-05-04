@@ -325,6 +325,7 @@ header {
   margin-bottom: 0.6rem;
 }
 
+/* Star SVG for Saved Algorithms */
 .saved {
   position: absolute;
   top: 2.95rem;
@@ -333,6 +334,7 @@ header {
   cursor: pointer;
 }
 
+/* Rotate Cube SVG */
 .rotateCube {
   position: absolute;
   top: 2.95rem;
