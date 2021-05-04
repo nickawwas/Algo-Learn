@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import {NavData} from './NavData';
 
 import "./Navbar.css"
 
 const Navbar = () => {
+    // Open and Close Nav Bar
     const [navState, setNavState] = useState(false);
     const toggleNav = () => setNavState(!navState);
 
-    const [currentTab, setCurrentTab] = useState('Home');
+    // Using Path to Update Tab on Reload
+    const { pathname } = useLocation();
+    const [currentTab, setCurrentTab] = useState(pathname);
     
-    // const storeTab = (tab) => localStorage.setItem('currentTab', tab);
-
     return (
         <header>
-            <Link to="/" className="logo" onClick={() => setCurrentTab('Home')}>  
+            <Link to="/" className="logo" onClick={() => setCurrentTab('/')}>  
                 algo 
             </Link>   
 
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <ul className="nav-list" onClick={toggleNav}>
                     {NavData.map((item, key) => {
                         return (
-                            <li className={currentTab === item.title ? 'nav-items current-tab' : 'nav-items'} key={key} onClick={() => setCurrentTab(item.title)}>
+                            <li className={currentTab === item.path ? 'nav-items current-tab' : 'nav-items'} key={key} onClick={() => setCurrentTab(item.path)}>
                                 <Link to={item.path}> 
                                     {item.title}
                                 </Link>
@@ -33,7 +34,7 @@ const Navbar = () => {
                     
                     <li className="nav-items">
                         <Link to="/contact"> 
-                            <button className={currentTab === 'Contact' ? "contact-button current-tab" : 'contact-button'} onClick={() => setCurrentTab('Contact')}> 
+                            <button className={currentTab === '/contact' ? "contact-button current-tab" : 'contact-button'} onClick={() => setCurrentTab('/contact')}> 
                                 Contact 
                             </button>
                         </Link>
