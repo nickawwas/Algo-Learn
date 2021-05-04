@@ -4,7 +4,7 @@ export const cornerCases = ["UBL (A)", "URB (B)", "ULF (D)", "LUB (E)", "LFU (F)
 /* Individual Alg Objects */
 export const algsUBL = [
   {
-    case: "UBL-URB",
+    case: "UBL-URB (AB)",
     algs: [
       {
         alg: "Lw' U R' D2 R U' R' D2' R Lw",
@@ -15,7 +15,7 @@ export const algsUBL = [
     ],
   },
   {
-    case: "UBL-ULF",
+    case: "UBL-ULF (AD)",
     algs: [
       {
         alg: "R' D' R U2 R' D R U R' D' R U' U2' R' D R",
@@ -26,7 +26,7 @@ export const algsUBL = [
     ],
   },
   {
-    case: "UBL-LFU",
+    case: "UBL-LFU (AF)",
     algs: [
       {
         alg: "F U2 R' D' R U2' R' D R F'",
@@ -37,7 +37,7 @@ export const algsUBL = [
     ],
   },
   {
-    case: "UBL-LDF",
+    case: "UBL-LDF (AG)",
     algs: [
       {
         alg: "R' D R U2 R' D' R U2'",
