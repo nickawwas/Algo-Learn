@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from 'react'
 
 import { baseUrl } from "../components/Card/CardData";
 import {cornerCases, cornerAlgos} from "../components/Card/bldCorners";
-import { algsUB } from '../components/Card/bldEges';
+import { algsUB, algsUL, algsUR } from '../components/Card/bldEges';
 
 import Box from "../components/Box/Box";
 import Loading from './Loading';
@@ -19,7 +19,7 @@ const Blind = () => {
             {cornerCases.map((corner, key) => {
                 return (
                     <Box title={corner} key={key}>
-                        <Card algos={cornerAlgos[key]} baseUrl={baseUrl} />
+                        <Card algos={cornerAlgos[key]} baseUrl={baseUrl}  />
                     </Box>
                 )
             })}
@@ -27,7 +27,15 @@ const Blind = () => {
             <Title page="EDGES"/>
             
             <Box title="UB (A)">
-                <Card algos={algsUB} baseUrl={baseUrl} />
+                <Card algos={algsUB} baseUrl={baseUrl}  />
+            </Box>
+
+            <Box title="UR (B)">
+                <Card algos={algsUR} baseUrl={baseUrl}  />
+            </Box>
+
+            <Box title="UL (D)">
+                <Card algos={algsUL} baseUrl={baseUrl}  />
             </Box>
 
             {/* ADD MARGIN TO BOTTOM */}

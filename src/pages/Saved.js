@@ -1,9 +1,16 @@
 import React from 'react';
+
+//import Card from '../components/Card/Card';
 import Title from '../components/Title';
 
 const Saved = () => {
+    //State From Card
+    //const { saved, setSaved } = useBetween(useShareableState);
+
     return (
-        <Title page="Saved Algs"/>
+        <Title page="SAVED ALGS"/>
+
+        // <Card algos={saved} baseUrl={baseUrl}/>
     )
 }
 

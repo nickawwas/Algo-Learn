@@ -24,7 +24,7 @@ const Regular = () => {
         </Box>
 
         <Box title="PLL">
-            <Card algos={pllAlgs} baseUrl={baseUrl} />{" "}
+            <Card algos={pllAlgs} baseUrl={baseUrl}  />{" "}
         </Box>
     </Suspense>
   );

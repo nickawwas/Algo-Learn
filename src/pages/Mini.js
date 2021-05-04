@@ -15,15 +15,15 @@ const Mini = () => {
             <Title page="2 x 2"/>
 
             <Box title="CLL">
-                <Card algos={CllData} baseUrl={baseUrl}/>
+                <Card algos={CllData} baseUrl={baseUrl} />
             </Box>
 
             <Box title="EG-1">
-                <Card algos={Eg1Data} baseUrl={baseUrl}/>
+                <Card algos={Eg1Data} baseUrl={baseUrl} />
             </Box>
 
             <Box title="EG-2">
-                <Card algos={Eg2Data} baseUrl={baseUrl}/>
+                <Card algos={Eg2Data} baseUrl={baseUrl} />
             </Box>
 
             <Box title="PBL">
