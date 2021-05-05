@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,500&display=swap');
-
-/* VARIABLES - COLORS */
-$cloudWhite: #F3F3F3;
-$darkGrey: #283747;
-$darkBlue: #12232E;
-
-$blueMinded: #004E7C;
-$lighterBlue: #007CC7;
-$superLightGrey: #CDCDCD;
-$nightShadowBlue: #12343b;
-
-$headerFont: 'Barlow Condensed';
+/* IMPORT VARIABLES */
+@import "../../styles/global.scss";
 
 /* REMOVE BULLET AND UNDERLINE FROM LISTS */
 a {
@@ -28,7 +17,9 @@ header {
     align-items: center;
 
     color: $darkGrey;
-    background-color: $cloudWhite;
+    background-color: white; //$cloudWhite;
+
+    text-transform: uppercase;
 
     margin-bottom: 2rem;
     border-bottom: 1px solid $superLightGrey;
@@ -39,8 +30,7 @@ header {
     font-size: 2rem;
     font-weight: 500;
     font-style: italic;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 2px;
     color: $blueMinded;
 
@@ -65,18 +55,45 @@ header {
     &-items {
         margin: 0 1.2rem;
 
-        a:hover {
-            color: $blueMinded;
-        }
-
         a, button {
             font-weight: 300;
             font-size: 1.4rem;
             font-style: normal;
-            font-family: 'Barlow Condensed', sans-serif;
+            font-family: "Barlow Condensed", sans-serif;
 
             cursor: pointer;
             text-transform: uppercase;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+
+            /* Exclude Button from Effect */
+            &:not(.btn) {
+                
+                /* Add Underline Effect on Hover */
+                &:after {
+                    display: block;
+                    content: "";
+
+                    padding: 0.1rem;
+                    border-bottom: 3px solid $blueMinded;
+                    
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease-in-out;
+                    transform-origin: 0% 50%;
+                }
+
+                &:hover {
+                    font-weight: 600;
+                    color: $blueMinded;
+
+                    &:after { 
+                        transform: scaleX(1);
+                    }
+                }
+            }
         }
 
         button {
@@ -84,12 +101,15 @@ header {
             border-radius: 1rem;
             
             color: $darkGrey;
+            background-color: white;
             border-color: $lighterBlue;
 
             padding: 8px 20px;
+
             transition: 0.3s ease-in-out;
 
-            &:hover, &.current-tab{
+            &:hover,
+            &.current-tab{
                 color: white;
                 border-color: $blueMinded;
                 background-color: $blueMinded;
@@ -99,25 +119,33 @@ header {
 }
 
 /* Underlines Current Tab */
-.current-tab {
-    border-radius: 1px;
-    border-bottom: 3px solid $blueMinded;
-
-    padding-top: 5px;
-    padding-bottom: 2px;
+.current-tab a {
+    text-decoration: underline $blueMinded;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
 }
 
 .arrow {
     display: none;
 }
 
+/* MONITORS & COMPUTERS */
+@media only screen and (min-width: 1000px) {
+    .nav-items {
+        margin: 0 1.8rem;
+    }
+}
+
 /* MOBILE RESPONSIVE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     header {
         justify-content: space-between;
 
         border: none;
         padding: 0.8rem 0;
+
+        border-bottom: 1px solid $superLightGrey;
+
 
         a, svg {
             position: relative;
@@ -141,7 +169,7 @@ header {
         padding-bottom: 1rem;
         border-bottom: 1px solid $superLightGrey;
         border-radius: 0 0 20px 20px;
-        background-color: $cloudWhite; 
+        background-color: white; //$cloudWhite; 
 
         &-list {
             margin: 0;
@@ -150,10 +178,10 @@ header {
 
         &-items {
             padding: 0;
-            margin: 1.2rem 0;
+            margin: 1rem 0;
 
             a {
-                padding: 1rem 1.5rem;
+                padding: 0 3rem;
             }
         }
 
@@ -181,6 +209,7 @@ header {
     }
 }
 
+/* SLIDE IN NAV BAR */
 @keyframes slideIn {
     from {
         transform: translateY(-22rem);

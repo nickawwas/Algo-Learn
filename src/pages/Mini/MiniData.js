@@ -1052,9 +1052,3 @@ export const PBLData = [
     ],
   },
 ];
-
-export const baseUrl =
-  "https://cubing.net/api/visualcube/?fmt=svg&view=plan&pzl=2&case=";
-
-export const sideViewUrl =
-  "http://www.cubing.net/api/visualcube/?fmt=svg&pzl=2&case=";

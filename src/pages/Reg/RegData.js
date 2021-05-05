@@ -1,4 +1,440 @@
-export const f2lAlgs = '';
+export const f2lAlgs = [
+  {
+     case:"Case 1",
+     algs: [ { 
+          alg:"(U) R U' R'"  
+      },{ 
+          alg:"R' F R F'"  
+      }
+     ]
+},
+  {
+     case:"Case 2",
+     algs: [ { 
+          alg:"F R' F' R "  
+      },{ 
+          alg:"y' U' R' U R "  
+      },{ 
+          alg:"(U2) Lw R U' R' U Lw'"  
+      } 
+     ]
+},
+  {
+     case:"Case 3",
+     algs: [ { 
+          alg:"y' R' U' R y"  
+      },{ 
+          alg:"(U) Rw' R2 U' R' U M'"  
+      }
+     ]
+},
+  {
+     case:"Case 4",
+     algs: [ { 
+          alg:"R U R' "  
+      },{ 
+          alg:"R' D' Rw U Rw' D R2 U R' "  
+      }
+     ]
+},
+  {
+     case:"Case 5",
+     algs: [ { 
+          alg:"(U') R U R' U' R U2 R' "  
+      },{ 
+          alg:"(U') R U R' U R' F R F'"  
+      },{ 
+          alg:"R' D' R U R' D R U R U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 6",
+     algs: [ { 
+          alg:"(U') Rw U' R' U R U Rw'"  
+      },{ 
+          alg:"FL Empty - U' F' R' F R F"  
+      },{ 
+          alg:"BR Empty - U' R F R F' R'"  
+      }
+     ]
+},
+  {
+     case:"Case 7",
+     algs: [ { 
+          alg:"U' R U2 R' U2 R U' R' "  
+      },{ 
+          alg:"U' R U2 R' U' R U2 R' "  
+      },{ 
+          alg:"U' R U2 R' U R' F R F' "  
+      } 
+     ]
+},
+  {
+     case:"Case 8",
+     algs: [ { 
+          alg:"r' U2 R2 U R2 U r "  
+      },{ 
+          alg:"y U L' U2 L U2 L' U L"  
+      } 
+     ]
+},
+  {
+     case:"Case 9",
+     algs: [ { 
+          alg:"F (R U R' U') F' R U' R'"  
+      },{ 
+          alg:"y' U (R' U' R U') (R' U' R) "  
+      }
+     ]
+},
+  {
+     case:"Case 10",
+     algs: [ { 
+          alg:"U' R U R' U R U R' "  
+      },{ 
+          alg:"U y' R' U R U' y R U R' "  
+      },{ 
+          alg:"U2 R U' R' U' R U R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 11",
+     algs: [ { 
+          alg:"U' R U2 R' U F' U' F "  
+      },{ 
+          alg:"U' R U2 R' d R' U' R "  
+      },{ 
+          alg:"R U' R' U R U' R2 F R F' R U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 12",
+     algs: [ { 
+          alg:"R U' R' U R U' R' U2 R U' R' "  
+      },{ 
+          alg:"R' U2 R2 U R2 U R "  
+      },{ 
+          alg:"U F' U2 F U' R U R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 13",
+     algs: [ { 
+          alg:"y' U R' U R U' R' U' R "  
+      },{ 
+          alg:"d R' U R U' R' U' R "  
+      },{ 
+          alg:"M' U' R U R' U' R U2 r' "  
+      } 
+     ]
+},
+  {
+     case:"Case 14",
+     algs: [ { 
+          alg:"U' R U' R' U R U R' "  
+      },{ 
+          alg:"y L' U2 L U2 F U2 F' U F U' F' "  
+      },{ 
+          alg:"R U' R' U R U2 R' U2 R U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 15",
+     algs: [ { 
+          alg:"R U R' U2 R U' R' U R U' R' "  
+      },{ 
+          alg:"y L' U L U2 y' R U R' "  
+      },{ 
+          alg:"R U2 R' U R U R' U R U' R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 16",
+     algs: [ { 
+          alg:"R U' R' U2 F' U' F "  
+      },{ 
+          alg:"R U' R' U2 y L' U' L "  
+      },{ 
+          alg:"R2 B' R' B R' U2 R U' R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 17",
+     algs: [ { 
+          alg:"R U2 R' U' R U R' "  
+      },{ 
+          alg:"U' R U' R' U2 R U2 R2 F R F' "  
+      },{ 
+          alg:"y L F' L' F L' U L U' L' U L"  
+      } 
+     ]
+},
+  {
+     case:"Case 18",
+     algs: [ { 
+          alg:"y' R' U2 R U R' U' R "  
+      },{ 
+          alg:"R' F R F' R U' R' U R U' R' "  
+      },{ 
+          alg:"y L' U2 L U L' U' L "  
+      } 
+     ]
+},
+  {
+     case:"Case 19",
+     algs: [ { 
+          alg:"(U) R U2 R2 F R F' "  
+      },{ 
+          alg:"(U) R U2 R' U R U' R'"  
+      }
+     ]
+},
+  {
+     case:"Case 20",
+     algs: [ { 
+          alg:"(U') R U' R2 F R F' R U' R'"  
+      }
+     ]
+},
+  {
+     case:"Case 21",
+     algs: [ { 
+          alg:"R U' R' U2 R U R' "  
+      },{ 
+          alg:"(U2) R U R2 F R F'"  
+      },{ 
+          alg:"(U2) R U R' U R U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 22",
+     algs: [ { 
+          alg:"F' L' U2 L F "  
+      },{ 
+          alg:"Rw U' Rw' U2 Rw U Rw'"  
+      },{ 
+          alg:"(U') R U2 R2 F R F' R U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 23",
+     algs: [ { 
+          alg:"R U R' U2 R U R' U' R U R' "  
+      },{ 
+          alg:"(U) R U' R' U' R U' R' U R U' R'"  
+      },{ 
+          alg:"(U') R' U' R U' R' U2 R2 U' R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 24",
+     algs: [ { 
+          alg:"F U R U' R' F' R U' R' "  
+      },{ 
+          alg:"U' R U R2 F R F' R U' R' "  
+      },{ 
+          alg:"U F' L' U L F R U R'"  
+      } 
+     ]
+},
+  {
+     case:"Case 25",
+     algs: [ { 
+          alg:"R' F' R U R U' R' F "  
+      },{ 
+          alg:"R' U' R' U' R' U R U R "  
+      },{ 
+          alg:"y U' L' U L y' U R U' R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 26",
+     algs: [ { 
+          alg:"U R U' R' U' F' U F "  
+      },{ 
+          alg:"y r U r' U' r' F r F' "  
+      },{ 
+          alg:"U R U' R' F R' F' R "  
+      } 
+     ]
+},
+  {
+     case:"Case 27",
+     algs: [ { 
+          alg:"R U' R' U R U' R' "  
+      },{ 
+          alg:"R U' R2 F R F' "  
+      },{ 
+          alg:"y L' U' L U2 F U' F'"  
+      } 
+     ]
+},
+  {
+     case:"Case 28",
+     algs: [ { 
+          alg:"y L' U L U' L' U L "  
+      },{ 
+          alg:"y' R' U R U' R' U R "  
+      },{ 
+          alg:"R U R' U' F R' F' R "  
+      } 
+     ]
+},
+  {
+     case:"Case 29",
+     algs: [ { 
+          alg:"R' F R F' R' F R F' "  
+      },{ 
+          alg:"y' R' U' R U R' U' R "  
+      },{ 
+          alg:"y L' U' L U L' U' L "  
+      } 
+     ]
+},
+  {
+     case:"Case 30",
+     algs: [ { 
+          alg:"R U R' U' R U R' "  
+      },{ 
+          alg:"F R' F' R F R' F' R "  
+      },{ 
+          alg:"y U' L' U' L U2 F U2 F' U F U' F'"  
+      } 
+     ]
+},
+  {
+     case:"Case 31",
+     algs: [ { 
+          alg:"U' R' F R F' R U' R' "  
+      },{ 
+          alg:"l F' R U' R' U l' "  
+      },{ 
+          alg:"R U' R' y L' U2 L "  
+      } 
+     ]
+},
+  {
+     case:"Case 32",
+     algs: [ { 
+          alg:"R U R' U' R U R' U' R U R' "  
+      },{ 
+          alg:"U R U' R' U R U' R' U R U' R' "  
+      },{ 
+          alg:"y L' U' L U L' U' L U L' U' L "  
+      } 
+     ]
+},
+  {
+     case:"Case 33",
+     algs: [ { 
+          alg:"U' R U' R' U2 R U' R' "  
+      },{ 
+          alg:"U' R U' R' U R' F R F' "  
+      },{ 
+          alg:"U' R U' R' U' R U2 R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 34",
+     algs: [ { 
+          alg:"U R U R' U2 R U R' "  
+      },{ 
+          alg:"U' R U2 R' U R U R' "  
+      },{ 
+          alg:"y U L' U L U2 L' U L "  
+      } 
+     ]
+},
+  {
+     case:"Case 35",
+     algs: [ { 
+          alg:"U' R U R' U F' U' F "  
+      },{ 
+          alg:"U M' U R U' r' R U' R' "  
+      },{ 
+          alg:"U2 R U R' F R' F' R "  
+      } 
+     ]
+},
+  {
+     case:"Case 36",
+     algs: [ { 
+          alg:"U2 R' F R F' U2 R U R' "  
+      },{ 
+          alg:"U F' U' F U' R U R' "  
+      },{ 
+          alg:"R2 u R U R' U' u' R' U R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 37",
+     algs: [ { 
+          alg:"R2 U2 F R2 F' U2 R' U R' "  
+      },{ 
+          alg:"R U' R' d R' U2 R U2 R' U R "  
+      },{ 
+          alg:"R U R' U2 R U2 R' U F' U' F "  
+      } 
+     ]
+},
+  {
+     case:"Case 38",
+     algs: [ { 
+          alg:"R U R' U' R U2 R' U' R U R' "  
+      },{ 
+          alg:"R2 U2 R' U' R U' R' U2 R' "  
+      },{ 
+          alg:"R U' R' U' R U R' U2 R U' R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 39",
+     algs: [ { 
+          alg:"R U R' U2 R U' R' U R U R' "  
+      },{ 
+          alg:"R U' R' U R U2 R' U R U' R' "  
+      },{ 
+          alg:"R U2 R' U R U' R' U R U R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 40",
+     algs: [ { 
+          alg:"R U' R' F R U R' U' F' R U' R' "  
+      },{ 
+          alg:"r U' r' U2 r U r' R U R' "  
+      },{ 
+          alg:"F' L' U2 L F R U R' "  
+      } 
+     ]
+},
+  {
+     case:"Case 41",
+     algs: [ { 
+          alg:"R U R' U' R U' R' U2 y' R' U' R "  
+      },{ 
+          alg:"R U F R U R' U' F' R' "  
+      },{ 
+          alg:"R U' R' F' L' U2 L F "  
+      } 
+     ]
+}
+];
 
 export const ollAlgs = [
     {

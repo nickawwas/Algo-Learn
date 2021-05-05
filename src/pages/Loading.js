@@ -4,7 +4,7 @@ const Loading = () => {
     return (
         <div style={{display: "flex", 
                     justifyContent: "center",
-                    fontSize: "1.5rem",
+                    fontSize: "2rem",
                     fontFamily: "Antonio, sans-serif"}}> 
             LOADING . . . 
         </div>

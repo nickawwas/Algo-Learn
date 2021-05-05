@@ -1,13 +1,14 @@
 import React, {lazy, Suspense} from 'react'
 
-import {CllData, Eg1Data, Eg2Data, PBLData, baseUrl, sideViewUrl} from "../components/Card/MiniData";
+import {miniBaseUrl as baseUrl, miniSideViewUrl as sideViewUrl} from "../../components/Card/CardData"
+import {CllData, Eg1Data, Eg2Data, PBLData} from "./MiniData";
 
-import Box from '../components/Box/Box';
-import Loading from "./Loading";
-import Title from '../components/Title';
+import Box from '../../components/Box/Box';
+import Loading from "../Loading";
+import Title from '../../components/Title';
 
 /* Lazy Load Pages */
-const Card = lazy(() =>  import('../components/Card/Card'));
+const Card = lazy(() =>  import('../../components/Card/Card'));
 
 const Mini = () => {
     return (

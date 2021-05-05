@@ -33,7 +33,7 @@ const Navbar = () => {
                     })}
                     
                     <li className="nav-items">
-                        <Link to="/contact"> 
+                        <Link to="/contact" className="btn"> 
                             <button className={currentTab === '/contact' ? "contact-button current-tab" : 'contact-button'} onClick={() => setCurrentTab('/contact')}> 
                                 Contact 
                             </button>

@@ -1,3 +1,6 @@
+/* IMPORT VARIABLES */
+/* FONTS - Antonio, Barlow Condensed */
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,500&display=swap");
 /* VARIABLES - COLORS */
 /* REMOVE BULLET AND UNDERLINE FROM LISTS */
@@ -19,7 +22,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #283747;
-  background-color: #F3F3F3;
+  background-color: white;
+  text-transform: uppercase;
   margin-bottom: 2rem;
   border-bottom: 1px solid #CDCDCD;
 }
@@ -29,8 +33,7 @@ header {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
-  font-family: 'Barlow Condensed', sans-serif;
-  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2px;
   color: #004E7C;
   margin-left: 2rem;
@@ -62,23 +65,55 @@ header {
   margin: 0 1.2rem;
 }
 
-.nav-items a:hover {
-  color: #004E7C;
-}
-
 .nav-items a, .nav-items button {
   font-weight: 300;
   font-size: 1.4rem;
   font-style: normal;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.nav-items a {
+  position: relative;
+  display: inline-block;
+  /* Exclude Button from Effect */
+}
+
+.nav-items a:not(.btn) {
+  /* Add Underline Effect on Hover */
+}
+
+.nav-items a:not(.btn):after {
+  display: block;
+  content: "";
+  padding: 0.1rem;
+  border-bottom: 3px solid #004E7C;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.nav-items a:not(.btn):hover {
+  font-weight: 600;
+  color: #004E7C;
+}
+
+.nav-items a:not(.btn):hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .nav-items button {
   border: solid 2px;
   border-radius: 1rem;
   color: #283747;
+  background-color: white;
   border-color: #007CC7;
   padding: 8px 20px;
   -webkit-transition: 0.3s ease-in-out;
@@ -92,25 +127,33 @@ header {
 }
 
 /* Underlines Current Tab */
-.current-tab {
-  border-radius: 1px;
-  border-bottom: 3px solid #004E7C;
-  padding-top: 5px;
-  padding-bottom: 2px;
+.current-tab a {
+  -webkit-text-decoration: underline #004E7C;
+          text-decoration: underline #004E7C;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
 .arrow {
   display: none;
 }
 
+/* MONITORS & COMPUTERS */
+@media only screen and (min-width: 1000px) {
+  .nav-items {
+    margin: 0 1.8rem;
+  }
+}
+
 /* MOBILE RESPONSIVE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border: none;
     padding: 0.8rem 0;
+    border-bottom: 1px solid #CDCDCD;
   }
   header a, header svg {
     position: relative;
@@ -134,7 +177,7 @@ header {
     padding-bottom: 1rem;
     border-bottom: 1px solid #CDCDCD;
     border-radius: 0 0 20px 20px;
-    background-color: #F3F3F3;
+    background-color: white;
   }
   .nav-list {
     margin: 0;
@@ -145,10 +188,10 @@ header {
   }
   .nav-items {
     padding: 0;
-    margin: 1.2rem 0;
+    margin: 1rem 0;
   }
   .nav-items a {
-    padding: 1rem 1.5rem;
+    padding: 0 3rem;
   }
   .nav.open {
     top: 3rem;
@@ -172,6 +215,7 @@ header {
   }
 }
 
+/* SLIDE IN NAV BAR */
 @-webkit-keyframes slideIn {
   from {
     -webkit-transform: translateY(-22rem);
@@ -182,7 +226,6 @@ header {
             transform: translateY(0);
   }
 }
-
 @keyframes slideIn {
   from {
     -webkit-transform: translateY(-22rem);

@@ -41,19 +41,19 @@ export const ContainerSections = [
         title: "3 Style",
         subSections: [
             {
-                section: "Edges (A-M)",
+                section: "Edges (A-N)",
                 baseUrl: "https://cubing.net/api/visualcube/?fmt=svg&case=U%27%20R%20E%27%20R%27%20U2%20R%20E%20R%27%20U%27"
             },
            {
-                section: "Corners (A-M)",
+                section: "Corners (A-N)",
                 baseUrl: "https://cubing.net/api/visualcube/?fmt=svg&case=l%27%20U2%20R%27%20D2%20R%20U2%20R%27%20D2%20R%20l"
            },
            {
-                section: "Edges (N-Z)",
+                section: "Edges (O-X)",
                 baseUrl: "https://cubing.net/api/visualcube/?fmt=svg&case=R%27U%27R%27ERUR%27E%27R2"
            },
            {
-                section: "Corners (N-Z)",
+                section: "Corners (O-X)",
                 baseUrl: "https://cubing.net/api/visualcube/?fmt=svg&case=z%20D%27%20R%27%20U2%20R%27%20D%20R%20U2%27%20R%27%20D%27%20R2%20D%20z%27"
            }
         ]

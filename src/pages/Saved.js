@@ -8,7 +8,7 @@ const Saved = () => {
     //const { saved, setSaved } = useBetween(useShareableState);
 
     return (
-        <Title page="SAVED ALGS"/>
+        <Title page="SAVED"/>
 
         // <Card algos={saved} baseUrl={baseUrl}/>
     )

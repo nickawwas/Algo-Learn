@@ -1813,7 +1813,7 @@ export const algsFDR = [
 
 export const algsFLD = [
   {
-    case: "FLD-UBL",
+    case: "FLD-UBL (LA)",
     algs: [
       {
         alg: "D' U R D' R' U2' R D R' U D",
@@ -1824,7 +1824,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-URB",
+    case: "FLD-URB (LB)",
     algs: [
       {
         alg: "D U R' D' R U' R' D R D'",
@@ -1835,7 +1835,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-ULF",
+    case: "FLD-ULF (LD)",
     algs: [
       {
         alg: "D U' R' D' R U R' D R D'",
@@ -1846,7 +1846,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-LUB",
+    case: "FLD-LUB (LE)",
     algs: [
       {
         alg: "R U2 R' D R U' R' D' R U' R'",
@@ -1857,7 +1857,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-LFU",
+    case: "FLD-LFU (LF)",
     algs: [
       {
         alg: "D R' U' R U R' D' R U' R' D U R D'",
@@ -1868,7 +1868,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-LBD",
+    case: "FLD-LBD (LH)",
     algs: [
       {
         alg: "D R U R' D R U' R' D2'",
@@ -1879,7 +1879,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-FUL",
+    case: "FLD-FUL (LI)",
     algs: [
       {
         alg: "R U' R' D R U2' R' D' R U' R'",
@@ -1890,7 +1890,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-FDR",
+    case: "FLD-FDR (LK)",
     algs: [
       {
         alg: "z D R U' R' D' R U R' z'",
@@ -1901,7 +1901,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-RBU",
+    case: "FLD-RBU (LN)",
     algs: [
       {
         alg: "F' U R' D' R U2 R' D R U F",
@@ -1912,7 +1912,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-RDB",
+    case: "FLD-RDB (LO)",
     algs: [
       {
         alg: "R D2 R' U' R D' R' U R D' R'",
@@ -1923,7 +1923,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-RFD",
+    case: "FLD-RFD (LP)",
     algs: [
       {
         alg: "D R U R' D' R U' R'",
@@ -1934,7 +1934,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-BUR",
+    case: "FLD-BUR (LQ)",
     algs: [
       {
         alg: "z D' R U' R' D R U R' z'",
@@ -1945,7 +1945,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-BLU",
+    case: "FLD-BLU (LR)",
     algs: [
       {
         alg: "D x' R U' R' D' R U R' D x D'",
@@ -1956,7 +1956,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-BDL",
+    case: "FLD-BDL (LS)",
     algs: [
       {
         alg: "D' R D' R' U' R D2 R' U R D' R' D",
@@ -1967,7 +1967,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-BRD",
+    case: "FLD-BRD (LT)",
     algs: [
       {
         alg: "D R U R' D2 R U' R' D",
@@ -1978,7 +1978,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-DRF",
+    case: "FLD-DRF (LV)",
     algs: [
       {
         alg: "R U' R2 D R U2 R' D' R U2' R U R'",
@@ -1989,7 +1989,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-DBR",
+    case: "FLD-DBR (LW)",
     algs: [
       {
         alg: "D R2 D' R' U' R D R' U R' D'",
@@ -2000,7 +2000,7 @@ export const algsFLD = [
     ],
   },
   {
-    case: "FLD-DLB",
+    case: "FLD-DLB (LX)",
     algs: [
       {
         alg: "z' U' R U R' D' R U' R' D U z",
@@ -2014,7 +2014,7 @@ export const algsFLD = [
 
 export const algsRBU = [
   {
-    case: "RBU-UBL",
+    case: "RBU-UBL (NA)",
     algs: [
       {
         alg: "R D R' U2 R' D2 R U2' R' D2' R2 D' R'",
@@ -2025,7 +2025,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-ULF",
+    case: "RBU-ULF (ND)",
     algs: [
       {
         alg: "U' R2 D' R U2 R' D R U2' R U",
@@ -2036,7 +2036,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-LUB",
+    case: "RBU-LUB (NE)",
     algs: [
       {
         alg: "R U R2' D R2 D' R2' U' R2 D R2' D' R",
@@ -2047,7 +2047,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-LFU",
+    case: "RBU-LFU (NF)",
     algs: [
       {
         alg: "F' U' R' D R U2' R' D' R U' F",
@@ -2058,7 +2058,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-LDF",
+    case: "RBU-LDF (NG)",
     algs: [
       {
         alg: "U R U' R' D R U2' R' D' R U' R' U'",
@@ -2069,7 +2069,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-LBD",
+    case: "RBU-LBD (NH)",
     algs: [
       {
         alg: "U R U2 R D' R' U2' R D R2 U'",
@@ -2080,7 +2080,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-FUL",
+    case: "RBU-FUL (NI)",
     algs: [
       {
         alg: "R D' R2' D R2 U' R2' D' R2 D R2' U R",
@@ -2091,7 +2091,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-FDR",
+    case: "RBU-FDR (NK)",
     algs: [
       {
         alg: "U' R' U' R D R' U2' R D' R' U' R U",
@@ -2102,7 +2102,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-FLD",
+    case: "RBU-FLD (NL)",
     algs: [
       {
         alg: "F' U' R' D' R U2' R' D R U' F",
@@ -2113,7 +2113,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-RDB",
+    case: "RBU-RDB (NO)",
     algs: [
       {
         alg: "U R U' R' D' R U2 R' D R U' R' U'",
@@ -2124,7 +2124,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-RFD",
+    case: "RBU-RFD (NP)",
     algs: [
       {
         alg: "U' R' U' D R D' R' U2 R D R' U2' D' U R U",
@@ -2135,7 +2135,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-BLU",
+    case: "RBU-BLU (NR)",
     algs: [
       {
         alg: "U R U2 R D R' U2' R D' R2 U'",
@@ -2146,7 +2146,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-BDL",
+    case: "RBU-BDL (NS)",
     algs: [
       {
         alg: "U' R' U' R D' R' U2 R D R' U' R U",
@@ -2157,7 +2157,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-BRD",
+    case: "RBU-BRD (NT)",
     algs: [
       {
         alg: "U D R U2 R D' R' U2' R D R2 D' U'",
@@ -2168,7 +2168,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-DFL",
+    case: "RBU-DFL (NU)",
     algs: [
       {
         alg: "U' R2' D R U2 R' D' R U2' R U",
@@ -2179,7 +2179,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-DRF",
+    case: "RBU-DRF (NV)",
     algs: [
       {
         alg: "U R' F2 R D' R' D F2 D' R D U'",
@@ -2190,7 +2190,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-DBR",
+    case: "RBU-DBR (NW)",
     algs: [
       {
         alg: "F' U2 R D R' U2' R D' R' F",
@@ -2201,7 +2201,7 @@ export const algsRBU = [
     ],
   },
   {
-    case: "RBU-DLB",
+    case: "RBU-DLB (NX)",
     algs: [
       {
         alg: "U' D R2 D R U2 R' D' R U2' R D' U",
@@ -2215,7 +2215,7 @@ export const algsRBU = [
 
 export const algsRDB = [
   {
-    case: "RDB-UBL",
+    case: "RDB-UBL (OA)",
     algs: [
       {
         alg: "U R D R' U2' R D' R' U",
@@ -2226,7 +2226,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-URB",
+    case: "RDB-URB (OB)",
     algs: [
       {
         alg: "R D R' U' R D' R' U",
@@ -2237,7 +2237,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-ULF",
+    case: "RDB-ULF (OD)",
     algs: [
       {
         alg: "U2' R D R' U R D' R' U",
@@ -2248,7 +2248,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-LUB",
+    case: "RDB-LUB (OE)",
     algs: [
       {
         alg: "R D U R D R' U' R D' R' D' R'",
@@ -2259,7 +2259,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-LFU",
+    case: "RDB-LFU (OF)",
     algs: [
       {
         alg: "R' U R' D' R U2' R' D R U R",
@@ -2270,7 +2270,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-LDF",
+    case: "RDB-LDF (OG)",
     algs: [
       {
         alg: "U D' R U' R' D2' R U R' D' U'",
@@ -2281,7 +2281,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-LBD",
+    case: "RDB-LBD (OH)",
     algs: [
       {
         alg: "R D R' U' R D2' R' U R D R'",
@@ -2292,7 +2292,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-FUL",
+    case: "RDB-FUL (OI)",
     algs: [
       {
         alg: "Lw' U R D R' U2' R D' R' U Lw",
@@ -2303,7 +2303,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-FDR",
+    case: "RDB-FDR (OK)",
     algs: [
       {
         alg: "U D' R U' R' D R U R' U'",
@@ -2314,7 +2314,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-FLD",
+    case: "RDB-FLD (OL)",
     algs: [
       {
         alg: "R D R' U' R D R' U R D2' R'",
@@ -2325,7 +2325,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-RBU",
+    case: "RDB-RBU (ON)",
     algs: [
       {
         alg: "U R U R' D' R U2' R' D R U R' U'",
@@ -2336,7 +2336,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-RFD",
+    case: "RDB-RFD (OP)",
     algs: [
       {
         alg: "R D' R' D R U R' D' R U' D R'",
@@ -2347,7 +2347,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-BUR",
+    case: "RDB-BUR (OQ)",
     algs: [
       {
         alg: "U' R U R' U' R D R' U R D' U' R' U",
@@ -2358,7 +2358,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-BLU",
+    case: "RDB-BLU (OR)",
     algs: [
       {
         alg: "R' U R' D' R U R' D R U2' R",
@@ -2369,7 +2369,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-BDL",
+    case: "RDB-BDL (OS)",
     algs: [
       {
         alg: "U D' R U' R' D' R U R' D2 U'",
@@ -2380,7 +2380,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-DFL",
+    case: "RDB-DFL (OU)",
     algs: [
       {
         alg: "U' R2' D R U R' D' R U' R U",
@@ -2391,7 +2391,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-DRF",
+    case: "RDB-DRF (OV)",
     algs: [
       {
         alg: "D' U R U' F2 U R' U' R F2' R' D",
@@ -2402,7 +2402,7 @@ export const algsRDB = [
     ],
   },
   {
-    case: "RDB-DLB",
+    case: "RDB-DLB (OX)",
     algs: [
       {
         alg: "R2 D2 R U R' D R U' R' D R2'",
@@ -2416,7 +2416,7 @@ export const algsRDB = [
 
 export const algsRFD = [
   {
-    case: "RFD-UBL",
+    case: "RFD-UBL (PA)",
     algs: [
       {
         alg: "U2 R' D' R U2' R' D R",
@@ -2427,7 +2427,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-URB",
+    case: "RFD-URB (PB)",
     algs: [
       {
         alg: "U R' D' R U' R' D R",
@@ -2438,7 +2438,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-ULF",
+    case: "RFD-ULF (PD)",
     algs: [
       {
         alg: "U' R' D' R U R' D R",
@@ -2449,7 +2449,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-LUB",
+    case: "RFD-LUB (PE)",
     algs: [
       {
         alg: "D' R U2 R' D R U' R' D' R U' R' D",
@@ -2460,7 +2460,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-LFU",
+    case: "RFD-LFU (PF)",
     algs: [
       {
         alg: "R' U' R U R' D' R U' R' D U R",
@@ -2471,7 +2471,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-LDF",
+    case: "RFD-LDF (PG)",
     algs: [
       {
         alg: "U R' D' R U' R' D2' R U R' D' R U'",
@@ -2482,7 +2482,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-LBD",
+    case: "RFD-LBD (PH)",
     algs: [
       {
         alg: "R U R' D2 R U' R' D2'",
@@ -2493,7 +2493,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-FUL",
+    case: "RFD-FUL (PI)",
     algs: [
       {
         alg: "Lw' U2 R' D' R U2' R' D R Lw",
@@ -2504,7 +2504,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-FLD",
+    case: "RFD-FLD (PL)",
     algs: [
       {
         alg: "R U R' D R U' R' D'",
@@ -2515,7 +2515,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-RBU",
+    case: "RFD-RBU (PN)",
     algs: [
       {
         alg: "U' R' U' D U2 R D' R' U2' R D R' D' U R U",
@@ -2526,7 +2526,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-RDB",
+    case: "RFD-RDB (PO)",
     algs: [
       {
         alg: "R D' U R' D R U' R' D' R D R'",
@@ -2537,7 +2537,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-BUR",
+    case: "RFD-BUR (PQ)",
     algs: [
       {
         alg: "R D R D' R' U' R D R' U D' R'",
@@ -2548,7 +2548,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-BLU",
+    case: "RFD-BLU (PR)",
     algs: [
       {
         alg: "x' R U' R' D' R U R' D x",
@@ -2559,7 +2559,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-BDL",
+    case: "RFD-BDL (PS)",
     algs: [
       {
         alg: "x' R U2 R' D' R U2' R' D x",
@@ -2570,7 +2570,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-BRD",
+    case: "RFD-BRD (PT)",
     algs: [
       {
         alg: "R U R' D' R U' R' D",
@@ -2581,7 +2581,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-DFL",
+    case: "RFD-DFL (PU)",
     algs: [
       {
         alg: "R D U R' D' R U' R' D R D' R'",
@@ -2592,7 +2592,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-DBR",
+    case: "RFD-DBR (PW)",
     algs: [
       {
         alg: "R U R' D R U' R D' R' U' R D R' U R' D'",
@@ -2603,7 +2603,7 @@ export const algsRFD = [
     ],
   },
   {
-    case: "RFD-DLB",
+    case: "RFD-DLB (PX)",
     algs: [
       {
         alg: "R2 D' R' U' R D R' U R'",
@@ -2617,7 +2617,7 @@ export const algsRFD = [
 
 export const algsBUR = [
   {
-    case: "BUR-UBL",
+    case: "BUR-UBL (QA)",
     algs: [
       {
         alg: "R' D' R' D R U2 R' D' R U2' D R",
@@ -2628,7 +2628,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-ULF",
+    case: "BUR-ULF (QD)",
     algs: [
       {
         alg: "U' R U R D R' U' R D' R2' U",
@@ -2639,7 +2639,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-LUB",
+    case: "BUR-LUB (QE)",
     algs: [
       {
         alg: "U R2' D' R U' R' D R U R U'",
@@ -2650,7 +2650,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-LFU",
+    case: "BUR-LFU (QF)",
     algs: [
       {
         alg: "z R U R' D' R U' R' D z'",
@@ -2661,7 +2661,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-LDF",
+    case: "BUR-LDF (QG)",
     algs: [
       {
         alg: "R' U D R U' R' D' R U R' U' R",
@@ -2672,7 +2672,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-LBD",
+    case: "BUR-LBD (QH)",
     algs: [
       {
         alg: "R U' L U R' U' L' U",
@@ -2683,7 +2683,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-FUL",
+    case: "BUR-FUL (QI)",
     algs: [
       {
         alg: "R D' U' R' D' R U2' R' D R U' D R'",
@@ -2694,7 +2694,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-FDR",
+    case: "BUR-FDR (QK)",
     algs: [
       {
         alg: "D' R' U D R U' R' D' R U R' U' R D",
@@ -2705,7 +2705,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-FLD",
+    case: "BUR-FLD (QL)",
     algs: [
       {
         alg: "z R U' R' D' R U R' D z'",
@@ -2716,7 +2716,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-RDB",
+    case: "BUR-RDB (QO)",
     algs: [
       {
         alg: "U' R U D R' U' R D' R' U R U' R' U",
@@ -2727,7 +2727,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-RFD",
+    case: "BUR-RFD (QP)",
     algs: [
       {
         alg: "R D U' R D' R' U R D R' D' R'",
@@ -2738,7 +2738,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-BLU",
+    case: "BUR-BLU (QR)",
     algs: [
       {
         alg: "R U' L' U R' U' L U",
@@ -2749,7 +2749,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-BDL",
+    case: "BUR-BDL (QS)",
     algs: [
       {
         alg: "R' U D2 R U' R' D2' R U R' U' R",
@@ -2760,7 +2760,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-BRD",
+    case: "BUR-BRD (QT)",
     algs: [
       {
         alg: "R U' R' U R D R' U' R D' U R'",
@@ -2771,7 +2771,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-DFL",
+    case: "BUR-DFL (QU)",
     algs: [
       {
         alg: "U D R' U' R U R' D' R U' R' D U R D' U'",
@@ -2782,7 +2782,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-DRF",
+    case: "BUR-DRF (QV)",
     algs: [
       {
         alg: "U R' U' R U R' D' R U' R' D U R U'",
@@ -2793,7 +2793,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-DBR",
+    case: "BUR-DBR (QW)",
     algs: [
       {
         alg: "D R U' R' U R D' R' U' R D U R' D'",
@@ -2804,7 +2804,7 @@ export const algsBUR = [
     ],
   },
   {
-    case: "BUR-DLB",
+    case: "BUR-DLB (QX)",
     algs: [
       {
         alg: "R U' R' U R D' R' U' R D U R'",
@@ -2818,7 +2818,7 @@ export const algsBUR = [
 
 export const algsBLU = [
   {
-    case: "BLU-URB",
+    case: "BLU-URB (RB)",
     algs: [
       {
         alg: "R' U2 R' D' R U2' R' D R2",
@@ -2829,7 +2829,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-ULF",
+    case: "BLU-ULF (RD)",
     algs: [
       {
         alg: "U' R2' D' R U' R' D R U R U",
@@ -2840,7 +2840,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-LFU",
+    case: "BLU-LFU (RF)",
     algs: [
       {
         alg: "x' D R U' R' D' R U R' x",
@@ -2851,7 +2851,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-LDF",
+    case: "BLU-LDF (RG)",
     algs: [
       {
         alg: "Lw U' R D' R' U' R D R' U2 Lw'",
@@ -2862,7 +2862,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-LBD",
+    case: "BLU-LBD (RH)",
     algs: [
       {
         alg: "U2 R U R D' R' U' R D R2' U2'",
@@ -2873,7 +2873,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-FUL",
+    case: "BLU-FUL (RI)",
     algs: [
       {
         alg: "R U R' D' R' D R U2 R' D' R U2' D R U' R'",
@@ -2884,7 +2884,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-FDR",
+    case: "BLU-FDR (RK)",
     algs: [
       {
         alg: "Lw D' R' D R U' R' D' R U D Lw'",
@@ -2895,7 +2895,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-FLD",
+    case: "BLU-FLD (RL)",
     algs: [
       {
         alg: "D x' D' R U' R' D R U R' x D'",
@@ -2906,7 +2906,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-RBU",
+    case: "BLU-RBU (RN)",
     algs: [
       {
         alg: "U R2 D R' U2 R D' R' U2' R' U'",
@@ -2917,7 +2917,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-RDB",
+    case: "BLU-RDB (RO)",
     algs: [
       {
         alg: "R' U2 R' D' R U' R' D R U' R",
@@ -2928,7 +2928,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-RFD",
+    case: "BLU-RFD (RP)",
     algs: [
       {
         alg: "x' D' R U' R' D R U R' x",
@@ -2939,7 +2939,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-BUR",
+    case: "BLU-BUR (RQ)",
     algs: [
       {
         alg: "U' L' U R U' L U R'",
@@ -2950,7 +2950,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-BDL",
+    case: "BLU-BDL (RS)",
     algs: [
       {
         alg: "U' R' U' R D' R' U' R D R' U2 R U",
@@ -2961,7 +2961,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-BRD",
+    case: "BLU-BRD (RT)",
     algs: [
       {
         alg: "R2 U R D R' U2 R D' R' U R2'",
@@ -2972,7 +2972,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-DFL",
+    case: "BLU-DFL (RU)",
     algs: [
       {
         alg: "U' R2' D R U' R' D' R U R U",
@@ -2983,7 +2983,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-DRF",
+    case: "BLU-DRF (RV)",
     algs: [
       {
         alg: "U' D' R2' D R U' R' D' R U R D U",
@@ -2994,7 +2994,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-DBR",
+    case: "BLU-DBR (RW)",
     algs: [
       {
         alg: "R' U' L' U R2 U' L U R'",
@@ -3005,7 +3005,7 @@ export const algsBLU = [
     ],
   },
   {
-    case: "BLU-DLB",
+    case: "BLU-DLB (RX)",
     algs: [
       {
         alg: "U' D R2' D R U' R' D' R U R D' U",
@@ -3019,7 +3019,7 @@ export const algsBLU = [
 
 export const algsBDL = [
   {
-    case: "BDL-UBL",
+    case: "BDL-UBL (SA)",
     algs: [
       {
         alg: "U2 R' D2 R U2' R' D2' R",
@@ -3030,7 +3030,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-URB",
+    case: "BDL-URB (SB)",
     algs: [
       {
         alg: "U R' D2 R U' R' D2' R",
@@ -3041,7 +3041,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-ULF",
+    case: "BDL-ULF (SD)",
     algs: [
       {
         alg: "U' R' D2 R U R' D2' R",
@@ -3052,7 +3052,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-LUB",
+    case: "BDL-LUB (SE)",
     algs: [
       {
         alg: "U R2' D2 R U' R' D2' R U R U'",
@@ -3063,7 +3063,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-LFU",
+    case: "BDL-LFU (SF)",
     algs: [
       {
         alg: "x' D R U2 R' D' R U2' R' x",
@@ -3074,7 +3074,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-LDF",
+    case: "BDL-LDF (SG)",
     algs: [
       {
         alg: "U D2 R U' R' D' R U R' D' U'",
@@ -3085,7 +3085,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-FUL",
+    case: "BDL-FUL (SI)",
     algs: [
       {
         alg: "D2' R' F2' R D' R' D F2' D' R D'",
@@ -3096,7 +3096,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-FDR",
+    case: "BDL-FDR (SK)",
     algs: [
       {
         alg: "U D2 R U' R' D2' R U R' U'",
@@ -3107,7 +3107,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-FLD",
+    case: "BDL-FLD (SL)",
     algs: [
       {
         alg: "D' R D R' U' R D2' R' U R D R' D",
@@ -3118,7 +3118,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-RBU",
+    case: "BDL-RBU (SN)",
     algs: [
       {
         alg: "U' R' U R D' R' U2' R D R' U R U",
@@ -3129,7 +3129,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-RDB",
+    case: "BDL-RDB (SO)",
     algs: [
       {
         alg: "U D2' R U' R' D R U R' D U'",
@@ -3140,7 +3140,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-RFD",
+    case: "BDL-RFD (SP)",
     algs: [
       {
         alg: "x' D' R U2 R' D R U2' R' x",
@@ -3151,7 +3151,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-BUR",
+    case: "BDL-BUR (SQ)",
     algs: [
       {
         alg: "R' U R U' R' D2 R U R' D2' U' R",
@@ -3162,7 +3162,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-BLU",
+    case: "BDL-BLU (SR)",
     algs: [
       {
         alg: "U' R' U2' R D' R' U R D R' U R U",
@@ -3173,7 +3173,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-BRD",
+    case: "BDL-BRD (ST)",
     algs: [
       {
         alg: "U' R' U' L U R U' L' U2",
@@ -3184,7 +3184,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-DFL",
+    case: "BDL-DFL (SU)",
     algs: [
       {
         alg: "x' D2 R U2 R' D2' R U2' R' x",
@@ -3195,7 +3195,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-DRF",
+    case: "BDL-DRF (SV)",
     algs: [
       {
         alg: "U' D' R2' D R U R' D' R U' R D U",
@@ -3206,7 +3206,7 @@ export const algsBDL = [
     ],
   },
   {
-    case: "BDL-DBR",
+    case: "BDL-DBR (SW)",
     algs: [
       {
         alg: "U R D2 R U' R' D2' R U R2' U'",
