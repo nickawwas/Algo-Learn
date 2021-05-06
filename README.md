@@ -1,5 +1,6 @@
 # Algo-Learn
-A Cubing Website for Learning Algorithms Using a Cubing API, Written in React and Sass
+A Cubing Website for Learning Algorithms Using a Cubing API, Written in React, Redux, and Sass
+Uses Helmet for Better SEO and LocalStorage to have Persistent Data
 
 ## Usage
 Home Page - Select Between Different Cubes and Algorithms\
@@ -8,15 +9,17 @@ Home Page - Select Between Different Cubes and Algorithms\
 Learn 2x2 Algs: CLL, EG-1, EG-2, PBL\
 ![sample-2x2-algs](./imgs/sample2x2.png)
 
-Learn 3x3 Algs: F2L, OLL, PLL, ZBLS \
+Learn 3x3 Algs: F2L, OLL, PLL \
 ![sample-3x3-algs](./imgs/sample3x3.png)
 
 Learn 3-BLD Algs: 3-Style for Corners and Edges\
 ![sample-3bld-algs](./imgs/sample3Bld.png)
 
-Contact Me Page Available to Check my Github Profile, Repo, LinkedIn, and Email Me\
-![contact-page](./imgs/contactPage.png)
+Rotate Cube to Better View the Case from a Different Angle\
+![sample-rotate-algs](./imgs/sampleSaved.png)
 
-## Future Releases
-Add Cross Algs\
-Finish 3Bld Algs
+Save Your Favorite Algorithms to Practice and Enjoy\
+![sample-saved-algs](./imgs/sampleSaved.png)
+
+Contact Me Through Linkedin, By Email, and View My Github Profile and Repo \
+![contact-page](./imgs/contactPage.png)
