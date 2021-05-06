@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import "../../styles/global.scss";
 
 .contact-page {
     display: flex;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     
-    width: 560px;
+    width: 500px;
     height: 220px;
 
     padding: 2rem;
@@ -35,8 +35,8 @@
 .name {
     color: #12343b;
 
-    font-weight: 400;
-    font-size: 1.75rem;
+    font-weight: 500;
+    font-size: 1.8rem;
 
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
@@ -45,8 +45,9 @@
 .program {
     color: #12343b;
 
-    font-weight: 200;
-    font-size: 1.25rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
 }
 
 .profile-pic {
@@ -73,12 +74,108 @@
         margin: 0 0.2rem;
         padding: 0 0.5rem;
 
+        transition: 0.3s ease-in;
+
         &:hover {
             cursor: pointer;
             border-radius: 50%;
 
             background: lightseagreen;
         }
+    }
+}
+
+.msg {
+    &-container {
+        display: flex;
+        justify-content: flex-start;
+    
+        font-size: 2rem;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    &-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        margin: 1rem 15% 1rem;
+        font-style: normal;
+    }
+
+    &-welcome, &-thanks{
+        display: flex;
+        padding-bottom: 1rem;
+
+        .hello, .thanks {
+            font-style: italic;
+            padding: 0.2rem 2.25rem 0 0;
+        }
+
+        .thanks {
+            padding-bottom: 1rem;
+        }
+
+        .smile, .wave {
+            font-size: 2rem;
+            display: inline-block;
+        }
+
+        .wave {
+            animation: waving 2s infinite;
+            transform-origin: 70% 70%;
+        }
+          
+        @keyframes waving {
+            10% { 
+                transform: rotate(15deg) 
+            }
+            20% { 
+                transform: rotate(-10deg) 
+            }
+            30% { 
+                transform: rotate(15deg) 
+            }
+            40% { 
+                transform: rotate(-5deg) 
+            }
+            50% { 
+                transform: rotate(10deg) 
+            }
+            60% {
+                transform: rotate( 0deg) 
+            } 
+        }
+    }
+
+    &-experience, &-call-to-action {
+        font-size: 1.6rem;
+        padding-bottom: 0.8rem;
+    }
+
+}
+
+.donate {
+    border: solid 2px;
+    border-radius: 1rem;
+    
+    color: $darkGrey;
+    background-color: $cloudWhite;
+    border-color: $lighterBlue;
+
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0.8rem 1.6rem;
+
+    margin-bottom: 5rem; 
+
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        color: white;
+        border-color: $blueMinded;
+        background-color: $blueMinded;
+        cursor: pointer;
     }
 }
 
@@ -89,7 +186,7 @@
         justify-content: flex-start;
 
         width: 300px;
-        height: 440px;
+        height: 420px;
 
         padding: 1rem 0;
         padding-top: 1.6rem;
@@ -110,5 +207,23 @@
 
     .svgs {
         margin-top: 1.8rem;
+    }
+
+    .msg {
+        &-container {
+            font-size: 1.6rem;
+        }
+
+        &-experience, &-call-to-action {
+            font-size: 1.4rem;
+        }
+    }
+
+    .smile, .wave {
+        font-size: 1.6rem;
+    }
+
+    .donate {
+        font-size: 1rem;
     }
 }

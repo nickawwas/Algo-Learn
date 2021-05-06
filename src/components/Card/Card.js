@@ -30,6 +30,7 @@ const Card = ({algos, baseUrl}) => {
     useEffect(() => {
         if(savedStore.length === 0 && localStorage.getItem("savedAlgs")?.length > 2)
             dispatch(updateSaved(JSON.parse(localStorage.getItem("savedAlgs"))));
+        // eslint-disable-next-line
     }, [])
 
     /* Update Local Storage With Changes In Saved State */

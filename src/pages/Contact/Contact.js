@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Img from './contact-img.jpg'
+import Title from '../../components/Title';
 
 import './Contact.css'
 
@@ -23,14 +24,14 @@ const Contact = () => {
                     content="Contact Business Github Linkedin Links"
                 />
             </Helmet>
-            
+        
+            <Title page="CONTACT" />
             <div className='contact-page'>
                 <div className='contact-container'>
                     <img src={Img} alt='me' className='profile-pic' />
                     <div className='contact-details'> 
                         <span className='name'> Nicholas Kawwas </span> 
-                        <span className='program'> Computer Engineering Student  </span> 
-                        <span className='program'> @ Concordia University  </span> 
+                        <span className='program'> Computer Software Engineer  </span> 
                         
                         <div className='svgs'>
                             {/* GITHUB, CODE DOC, EMAIL, LINKEDIN */}
@@ -41,7 +42,30 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+            </div>　
+
+            <Title page="MESSAGE" />
+            <div className="msg-container">
+                <div className="msg-section">
+                    <div className="msg-welcome">
+                        <div className="hello"> Hey There! </div>
+                        <div className="wave"> 👋🏼 </div>
+                    </div>
+
+                    <div className="msg-experience"> I hope you enjoyed the website experience I built.  </div>
+
+                    <div className="msg-call-to-action"> If you are in need of an aesthetic and functional website, feel free to contact me. </div>
+                    <div className="msg-call-to-action"> If you enjoyed my work, consider donating to help fund the future of Algo Learn. </div>
+
+                    <div className="msg-thanks">
+                        <div className="thanks"> Thank You ! </div>
+                        <div className="smile"> 😃 </div>
+                    </div>
+                    
+                    <button className="donate" onClick={() => window.open("https://paypal.me/oddmemegod?locale.x=en_US", "_blank")}> DONATE </button>                    
+                </div>
             </div>
+
         </>
     )
 }
