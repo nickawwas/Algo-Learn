@@ -5,9 +5,6 @@ import { addSaved, removeSaved, updateSaved } from "../../redux/actions";
 import "./Card.css"
 
 const Card = ({algos, baseUrl}) => {
-    /* Use Local Storage to Save Stars on Reload */
-    // const savedStore = localStorage.getItem("savedAlgs");
-
     //Use Dispatch to Dispatch Action
     const dispatch = useDispatch();
 
@@ -21,24 +18,21 @@ const Card = ({algos, baseUrl}) => {
             dispatch(addSaved(newStar));
         else
             dispatch(removeSaved(newStar));
-
-        console.log(savedStore);
     }
 
     const savedState = (algo) => savedStore.includes(JSON.stringify(algo));
 
+    /* On Refresh Use Local Storage As Saved Algs */
+    useEffect(() => {
+        if(savedStore.length === 0 && localStorage.getItem("savedAlgs")?.length > 2)
+            dispatch(updateSaved(JSON.parse(localStorage.getItem("savedAlgs"))));
+    }, [])
+
     /* Update Local Storage With Changes In Saved State */
     useEffect(() => {
-        localStorage.setItem("savedAlgs", savedStore);
+        localStorage.setItem("savedAlgs", JSON.stringify(savedStore));
     }, [savedStore])
 
-    /* ON RELOAD GET STARRED ALGOS From Local Storage 
-    useEffect(() => {
-        //console.log("Updating...", localStorage.getItem("savedAlgs"));
-        //console.log("Updating...", localStorage.getItem("savedAlgs").map(algo => JSON.parse(algo)));
-        //dispatch(updateSaved(localStorage.getItem("savedAlgs")));
-    }, [])
-*/
     /* Use State Hook to Rotate the Cube */
     const [spin, setSpin] = useState([]);
     const updateSpin = (algo) => {
