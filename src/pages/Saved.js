@@ -4,7 +4,6 @@ import Title from '../components/Title';
 import Card from '../components/Card/Card';
 
 import { baseUrl } from "../components/Card/CardData";
-
 import { useSelector } from "react-redux";
 
 const Saved = () => {
@@ -17,11 +16,7 @@ const Saved = () => {
     return (
         <>
             <Title page="SAVED"/>
-         
-            {/* SAVED ALGOS */}
-            { tmpStore.length !== 0 &&
-                <Card algos={tmpStore} baseUrl={baseUrl}/>
-            }
+            <Card algos={tmpStore} baseUrl={baseUrl}/>
         </>
     )
 }

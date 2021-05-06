@@ -1,12 +1,12 @@
 // Actions
-export const addSaved = algo  => {
+export const addSaved = (algo)  => {
     return {
         type: "ADD",
         payload: algo
     }
 }
 
-export const removeSaved = algo => {
+export const removeSaved = (algo) => {
     return {
         type: "REMOVE",
         payload: algo
