@@ -1,12 +1,37 @@
 import React, {useState, useEffect} from 'react'
+import { useSelector, useDispatch } from "react-redux";
 
+import {addSaved, removeSaved, updateSaved} from "../../redux/store";
 import "./Card.css"
 
 const Card = ({algos, baseUrl}) => {
     /* Use Local Storage to Save Stars on Reload */
-    const savedStore = localStorage.getItem("savedAlgs");
+    // const savedStore = localStorage.getItem("savedAlgs");
+
+    //Use Dispatch
+    const dispatch = useDispatch();
+
+    const savedStore = useSelector(state => state.savedReducer);
     
+    const updateSaved = (algo) => {
+        const newStar = JSON.stringify(algo);
+        if(!savedStore.includes(newStar))
+            dispatch(addSaved(newStar));
+        else
+            dispatch(removeSaved(newStar));
+
+        console.log(savedStore);
+    }
+
+    const savedState = (algo) => savedStore.includes(JSON.stringify(algo));
+
+    useEffect(() => {
+        console.log("no");
+        //    localStorage.setItem("savedAlgs", ...savedStore);
+    }, [savedStore])
+
     /* Use State Hook to Update Starred Image List */
+    /*
     const [saved, setSaved] = useState(!savedStore ? [] : savedStore);
     const updateSaved = (algo) => {
         const newStar = JSON.stringify(algo);
@@ -17,12 +42,12 @@ const Card = ({algos, baseUrl}) => {
     }
     const savedState = (algo) => saved.includes(JSON.stringify(algo));
 
-    /* Update Local Storage With Changes In Saved State */
     useEffect(() => {
         localStorage.setItem("savedAlgs", saved);
     }, [saved])
-
-    /* TODO: Save Algos from Any Section  */
+    */
+    /* Update Local Storage With Changes In Saved State */
+    
 
     /* Use State Hook to Rotate the Cube */
     const [spin, setSpin] = useState([]);

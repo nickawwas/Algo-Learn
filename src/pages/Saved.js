@@ -1,16 +1,46 @@
 import React from 'react';
 
-//import Card from '../components/Card/Card';
 import Title from '../components/Title';
+import Card from '../components/Card/Card';
+
+import { baseUrl } from "../components/Card/CardData";
+
+import { useSelector } from "react-redux";
 
 const Saved = () => {
-    //State From Card
-    //const { saved, setSaved } = useBetween(useShareableState);
+    /* Saved Algs from Redux Store */
+    const savedStore = useSelector(state => state.savedReducer);
+
+    /* Store in Temp Variable to Parse JSON */
+    const tmpStore = savedStore.map(algo => JSON.parse(algo));
 
     return (
-        <Title page="SAVED"/>
+        <>
+            <Title page="SAVED"/>
+         
+            {tmpStore != 0 &&
+                <Card algos={tmpStore} baseUrl={baseUrl}/>
+            }
+            {/*  
+            <div> 
+                { savedStore.map((algo, key) => (
+                    <div className='algs' key={`${algo.case} ${key}`}>
+                        <div className="alg-case">
+                            <span> {JSON.parse(algo).case} </span>
+                        
+                            <img src={`${baseUrl}${JSON.parse(algo).algs[0].alg}`} alt="Cube" />
+                        </div>
 
-        // <Card algos={saved} baseUrl={baseUrl}/>
+                        <div className="alg-notation">
+                            { JSON.parse(algo).algs.map(algz => (
+                                <span className="alg-moves" key={algz.alg}> {algz.alg} </span>
+                            ))}
+                        </div>  
+                    </div>
+                ))}
+            </div>
+                */}
+        </>
     )
 }
 
