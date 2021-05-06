@@ -1,6 +1,6 @@
 # Algo-Learn
-A Cubing Website for Learning Algorithms Using a Cubing API, Written in React, Redux, and Sass
-Uses Helmet for Better SEO and LocalStorage to have Persistent Data
+A Cubing Website for Learning Algorithms Using a Cubing API, Written in React, Redux, and Sass\
+Used Helmet for Better SEO and LocalStorage to Persist Saved Data
 
 ## Usage
 Home Page - Select Between Different Cubes and Algorithms\
@@ -16,7 +16,7 @@ Learn 3-BLD Algs: 3-Style for Corners and Edges\
 ![sample-3bld-algs](./imgs/sample3Bld.png)
 
 Rotate Cube to Better View the Case from a Different Angle\
-![sample-rotate-algs](./imgs/sampleSaved.png)
+![sample-rotate-algs](./imgs/sampleRotate.png)
 
 Save Your Favorite Algorithms to Practice and Enjoy\
 ![sample-saved-algs](./imgs/sampleSaved.png)
