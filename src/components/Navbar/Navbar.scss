@@ -121,6 +121,7 @@ header {
 /* Underlines Current Tab */
 .current-tab a {
     text-decoration: underline $blueMinded;
+    -webkit-text-decoration: underline $blueMinded;
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
 }

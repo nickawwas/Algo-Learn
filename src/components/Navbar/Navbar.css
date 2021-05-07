@@ -128,8 +128,8 @@ header {
 
 /* Underlines Current Tab */
 .current-tab a {
+  text-decoration: underline #004E7C;
   -webkit-text-decoration: underline #004E7C;
-          text-decoration: underline #004E7C;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }

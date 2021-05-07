@@ -115,7 +115,8 @@
         }
 
         .thanks {
-            text-decoration: underline wavy $lighterBlue;;
+            text-decoration: underline wavy $lighterBlue;
+            -webkit-text-decoration: underline wavy $lighterBlue;
             text-underline-offset: 0.5rem;
         }
 
@@ -151,7 +152,7 @@
     font-size: 1.5rem;
     font-style: italic;
     font-family: 'Barlow Condensed', sans-serif;    
-    padding: 0.75rem 1.75rem 1rem 1.25rem;
+    padding: 0.35rem 1.75rem 0.65rem 1.25rem;
 
     margin-left: 1rem;
     margin-bottom: 5rem; 
@@ -215,13 +216,17 @@
         }
     }
 
+    .hello {
+        padding: 0.2rem 1.25rem 0 0;
+    }
+
     .wave {
         font-size: 1.6rem;
     }
 
     .donate {
         font-size: 1.2rem;
-        padding: 0.5rem 1.5rem 0.75rem 1rem;
+        padding: 0.3rem 1.5rem 0.6rem 1rem;
 
         &-svg {
             padding-top: 0.4rem;
