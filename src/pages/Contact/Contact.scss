@@ -6,13 +6,15 @@
 
     font-style: normal;
     font-family: 'Antonio', sans-serif;
+
+    margin-bottom: 2rem;
 }
 
 .contact-container {
     display: flex;
     align-items: center;
     
-    width: 500px;
+    width: 520px;
     height: 220px;
 
     padding: 2rem;
@@ -102,7 +104,7 @@
         margin: 1rem 15% 1rem;
         font-style: normal;
     }
-
+    
     &-welcome, &-thanks{
         display: flex;
         padding-bottom: 1rem;
@@ -113,7 +115,8 @@
         }
 
         .thanks {
-            padding-bottom: 1rem;
+            text-decoration: underline wavy $lighterBlue;;
+            text-underline-offset: 0.5rem;
         }
 
         .smile, .wave {
@@ -125,34 +128,16 @@
             animation: waving 2s infinite;
             transform-origin: 70% 70%;
         }
-          
-        @keyframes waving {
-            10% { 
-                transform: rotate(15deg) 
-            }
-            20% { 
-                transform: rotate(-10deg) 
-            }
-            30% { 
-                transform: rotate(15deg) 
-            }
-            40% { 
-                transform: rotate(-5deg) 
-            }
-            50% { 
-                transform: rotate(10deg) 
-            }
-            60% {
-                transform: rotate( 0deg) 
-            } 
-        }
     }
 
-    &-experience, &-call-to-action {
+    &-experience, &-cta {
         font-size: 1.6rem;
         padding-bottom: 0.8rem;
     }
 
+    &-thanks {
+        padding-top: 1rem;
+    }
 }
 
 .donate {
@@ -163,33 +148,43 @@
     background-color: $cloudWhite;
     border-color: $lighterBlue;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: italic;
-    padding: 0.8rem 1.6rem;
+    font-family: 'Barlow Condensed', sans-serif;    
+    padding: 0.75rem 1.75rem 1rem 1.25rem;
 
+    margin-left: 1rem;
     margin-bottom: 5rem; 
 
     transition: 0.3s ease-in-out;
 
     &:hover{
         color: white;
+        fill: white;
         border-color: $blueMinded;
         background-color: $blueMinded;
         cursor: pointer;
     }
+
+    &-svg {
+        padding-top: 0.15rem;
+        margin-right: 0.2rem;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+
+/* MOBILE RESPONSIVE */
+@media only screen and (max-width: 650px) {
     .contact-container {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
 
         width: 300px;
-        height: 420px;
+        height: 460px;
 
-        padding: 1rem 0;
-        padding-top: 1.6rem;
+        padding: 1.2rem 0;
+        padding-top: 2rem;
     }
 
     .contact-details {
@@ -198,15 +193,16 @@
     }
 
     .profile-pic {
-        height: 180px;
+        height: 200px;
     }
 
     .name {
+        font-size: 1.8rem;
         margin: 0.8rem;
     }
 
     .svgs {
-        margin-top: 1.8rem;
+        margin-top: 1.6rem;
     }
 
     .msg {
@@ -214,16 +210,44 @@
             font-size: 1.6rem;
         }
 
-        &-experience, &-call-to-action {
+        &-experience, &-cta {
             font-size: 1.4rem;
         }
     }
 
-    .smile, .wave {
+    .wave {
         font-size: 1.6rem;
     }
 
     .donate {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem 0.75rem 1rem;
+
+        &-svg {
+            padding-top: 0.4rem;
+            margin-right: 0.1rem;
+        }
     }
+}
+
+/* WAVE ANIMATION */
+@keyframes waving {
+    10% { 
+        transform: rotate(15deg) 
+    }
+    20% { 
+        transform: rotate(-10deg) 
+    }
+    30% { 
+        transform: rotate(15deg) 
+    }
+    40% { 
+        transform: rotate(-5deg) 
+    }
+    50% { 
+        transform: rotate(10deg) 
+    }
+    60% {
+        transform: rotate( 0deg) 
+    } 
 }
