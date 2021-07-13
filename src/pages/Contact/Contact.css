@@ -7,10 +7,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-style: normal;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -19,15 +19,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 520px;
   height: 220px;
   padding: 2rem;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 7px 22px -7px #12232E;
-          box-shadow: 0px 7px 22px -7px #12232E;
-  background: #8FC1E3;
+  -webkit-box-shadow: 0px 7px 22px -7px #12232e;
+  box-shadow: 0px 7px 22px -7px #12232e;
+  background: #8fc1e3;
 }
 
 .contact-details {
@@ -36,14 +36,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0 2rem;
 }
 
@@ -63,6 +63,7 @@
 }
 
 .profile-pic {
+  object-fit: contain;
   height: 170px;
   border-radius: 50%;
   border: 3px solid white;
@@ -73,8 +74,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -102,10 +103,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   font-size: 2rem;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .msg-section {
@@ -114,46 +115,56 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 1rem 15% 1rem;
   font-style: normal;
 }
 
-.msg-welcome, .msg-thanks {
+.msg-welcome,
+.msg-thanks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 1rem;
 }
 
-.msg-welcome .hello, .msg-welcome .thanks, .msg-thanks .hello, .msg-thanks .thanks {
+.msg-welcome .hello,
+.msg-welcome .thanks,
+.msg-thanks .hello,
+.msg-thanks .thanks {
   font-style: italic;
   padding: 0.2rem 2.25rem 0 0;
 }
 
-.msg-welcome .thanks, .msg-thanks .thanks {
-  text-decoration: underline wavy #007CC7;
-  -webkit-text-decoration: underline wavy #007CC7;
+.msg-welcome .thanks,
+.msg-thanks .thanks {
+  text-decoration: underline wavy #007cc7;
+  -webkit-text-decoration: underline wavy #007cc7;
   text-underline-offset: 0.5rem;
 }
 
-.msg-welcome .smile, .msg-welcome .wave, .msg-thanks .smile, .msg-thanks .wave {
+.msg-welcome .smile,
+.msg-welcome .wave,
+.msg-thanks .smile,
+.msg-thanks .wave {
   font-size: 2rem;
   display: inline-block;
 }
 
-.msg-welcome .wave, .msg-thanks .wave {
+.msg-welcome .wave,
+.msg-thanks .wave {
   -webkit-animation: waving 2s infinite;
-          animation: waving 2s infinite;
+  animation: waving 2s infinite;
   -webkit-transform-origin: 70% 70%;
-          transform-origin: 70% 70%;
+  transform-origin: 70% 70%;
 }
 
-.msg-experience, .msg-cta {
+.msg-experience,
+.msg-cta {
   font-size: 1.6rem;
   padding-bottom: 0.8rem;
 }
@@ -166,11 +177,11 @@
   border: solid 2px;
   border-radius: 1rem;
   color: #283747;
-  background-color: #F3F3F3;
-  border-color: #007CC7;
+  background-color: #f3f3f3;
+  border-color: #007cc7;
   font-size: 1.5rem;
   font-style: italic;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   padding: 0.35rem 1.75rem 0.65rem 1.25rem;
   margin-left: 1rem;
   margin-bottom: 5rem;
@@ -181,8 +192,8 @@
 .donate:hover {
   color: white;
   fill: white;
-  border-color: #004E7C;
-  background-color: #004E7C;
+  border-color: #004e7c;
+  background-color: #004e7c;
   cursor: pointer;
 }
 
@@ -196,14 +207,14 @@
   .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: 300px;
     height: 460px;
     padding: 1.2rem 0;
@@ -226,7 +237,8 @@
   .msg-container {
     font-size: 1.6rem;
   }
-  .msg-experience, .msg-cta {
+  .msg-experience,
+  .msg-cta {
     font-size: 1.4rem;
   }
   .hello {
@@ -249,53 +261,53 @@
 @-webkit-keyframes waving {
   10% {
     -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   20% {
     -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   30% {
     -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   40% {
     -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   50% {
     -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes waving {
   10% {
     -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   20% {
     -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   30% {
     -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   40% {
     -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   50% {
     -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 /*# sourceMappingURL=Contact.css.map */

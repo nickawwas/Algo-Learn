@@ -1,25 +1,25 @@
-import React from 'react';
+import React from "react";
 
 import "./Container.css";
 
-const Container = props => {
-    return (
-        <div className='container'>
-            { props.sections.map(sec => (
-                <div className='mini-container' key={sec.title}>
-                    <p className="container-title"> {sec.title} </p> 
-                    <div className='mini-sub'>
-                        {sec.subSections.map(sub => (
-                            <div className="alg-holder" key={sub.section}>
-                                <img className="alg-img" src={sub.baseUrl} alt='test' />
-                                <span className="alg-type"> {sub.section} </span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+const Container = ({ sections }) => {
+  return (
+    <div className="container">
+      {sections.map(({ title, subSections }) => (
+        <div className="mini-container" key={title}>
+          <p className="container-title"> {title} </p>
+          <div className="mini-sub">
+            {subSections.map(({ baseUrl, section }) => (
+              <div className="alg-holder" key={section}>
+                <img className="alg-img" src={baseUrl} alt="test" />
+                <span className="alg-type"> {section} </span>
+              </div>
             ))}
+          </div>
         </div>
-    )
+      ))}
+    </div>
+  );
 };
 
 export default Container;

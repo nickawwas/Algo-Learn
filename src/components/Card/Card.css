@@ -9,14 +9,14 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: max-width;
-  color: #12232E;
+  color: #12232e;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 4rem;
@@ -28,20 +28,26 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   min-width: 60%;
   max-width: 80%;
   padding: 2rem 0;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 7px 37px -6px #12343B;
-          box-shadow: 0px 7px 37px -6px #12343B;
-  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  -webkit-box-shadow: 0px 7px 37px -6px #12343b;
+  box-shadow: 0px 7px 37px -6px #12343b;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0083b0),
+    to(#00b4db)
+  );
   background: linear-gradient(to right, #0083b0, #00b4db);
 }
 
@@ -53,9 +59,9 @@
   width: 360px;
   margin: 0.8rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 5px 5px 10px -5px #12343B;
-          box-shadow: 5px 5px 10px -5px #12343B;
-  background: #8FC1E3;
+  -webkit-box-shadow: 5px 5px 10px -5px #12343b;
+  box-shadow: 5px 5px 10px -5px #12343b;
+  background: #8fc1e3;
 }
 
 .alg-case {
@@ -64,14 +70,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 160px;
   height: 180px;
   position: relative;
@@ -84,11 +90,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-weight: 250;
   font-size: 1.25rem;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   margin: 0.2rem 0;
   width: 100%;
 }
@@ -105,11 +111,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 0.9rem;
   width: 200px;
   margin: 0 0.3rem;
@@ -119,7 +125,7 @@
 .alg-notation span {
   padding: 0.6rem 0.5rem;
   border-radius: 10px;
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 
 .alg-moves {
@@ -141,7 +147,7 @@
   top: 2.95rem;
   left: 1.125rem;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
   fill: #3786a0;
@@ -150,7 +156,7 @@
 
 .spin {
   -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 /* MOBILE VIEW */
@@ -159,7 +165,7 @@
     font-size: 1rem;
     padding: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: none;
   }
   .algs {
