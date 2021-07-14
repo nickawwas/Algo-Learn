@@ -17,8 +17,13 @@ const Card = ({ algos, baseUrl }) => {
     const newStar = JSON.stringify(
       algo?.url ? { ...algo } : { ...algo, url: baseUrl }
     );
-    if (!savedStore.includes(newStar)) dispatch(addSaved(newStar));
-    else dispatch(removeSaved(newStar));
+
+    if (!savedStore.find((star) => star === newStar))
+      dispatch(addSaved(newStar));
+    else {
+      console.log("hello?");
+      dispatch(removeSaved(newStar));
+    }
   };
 
   const savedState = (algo) => {
@@ -32,10 +37,11 @@ const Card = ({ algos, baseUrl }) => {
   useEffect(() => {
     if (
       savedStore.length === 0 &&
-      localStorage.getItem("savedAlgs")?.length > 2
+      localStorage.getItem("savedAlgs")?.length > 1
     )
       dispatch(updateSaved(JSON.parse(localStorage.getItem("savedAlgs"))));
-  });
+    // eslint-disable-next-line
+  }, []);
 
   /* Update Local Storage With Changes In Saved State */
   useEffect(() => {

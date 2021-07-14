@@ -24,24 +24,6 @@ const Blind = () => {
         />
       </Helmet>
 
-      {/* <nav className="bld-tabs">
-        <ul className="nav-tab-list">
-          <li
-            className={currentTab === 0 ? "current-tab" : "tab"}
-            onClick={() => setCurrentTab(0)}
-          >
-            CORNERS
-          </li>
-
-          <li
-            className={currentTab === 1 ? "current-tab" : "tab"}
-            onClick={() => setCurrentTab(1)}
-          >
-            EDGES
-          </li>
-        </ul>
-      </nav> */}
-
       <Title page="CORNERS" />
       {cornerCases.map((corner, key) => {
         return (

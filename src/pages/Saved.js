@@ -11,7 +11,7 @@ const Saved = () => {
   /* Saved Algs from Redux Store */
   const savedStore = useSelector((state) => state.stars);
 
-  /* Store in Temp Variable to Parse JSON */
+  /* Store Algs After Mapping to Parse JSON */
   const tmpStore = savedStore.map((algo) => JSON.parse(algo));
 
   return (
