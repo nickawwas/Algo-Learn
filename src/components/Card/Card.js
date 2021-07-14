@@ -30,13 +30,12 @@ const Card = ({ algos, baseUrl }) => {
 
   /* On Refresh Use Local Storage As Saved Algs */
   useEffect(() => {
-    console.log("hello");
     if (
       savedStore.length === 0 &&
       localStorage.getItem("savedAlgs")?.length > 2
     )
       dispatch(updateSaved(JSON.parse(localStorage.getItem("savedAlgs"))));
-  }, []);
+  });
 
   /* Update Local Storage With Changes In Saved State */
   useEffect(() => {

@@ -136,8 +136,16 @@
   transform: rotate(-180deg);
 }
 
+/* LARGE SCREENS */
+@media only screen and (min-width: 1250px) {
+  .cubing-card {
+    min-width: 80%;
+    max-width: 90%;
+  }
+}
+
 /* MOBILE VIEW */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .cubing-card {
     font-size: 1rem;
 
