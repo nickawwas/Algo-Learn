@@ -16,7 +16,11 @@ const Navbar = () => {
 
   return (
     <header>
-      <Link to="/" className="logo" onClick={() => setCurrentTab("/")}>
+      <Link
+        to="/Algo-Learn"
+        className="logo"
+        onClick={() => setCurrentTab("/")}
+      >
         algo
       </Link>
 
@@ -27,7 +31,9 @@ const Navbar = () => {
               <li
                 key={title}
                 className={
-                  currentTab === path ? "nav-items current-tab" : "nav-items"
+                  path.endsWith(currentTab)
+                    ? "nav-items current-tab"
+                    : "nav-items"
                 }
                 onClick={() => setCurrentTab(path)}
               >
@@ -37,10 +43,10 @@ const Navbar = () => {
           })}
 
           <li className="nav-items">
-            <Link to="/contact" className="btn">
+            <Link to="/Algo-Learn/contact" className="btn">
               <button
                 className={
-                  currentTab === "/contact"
+                  currentTab.endsWith("/contact")
                     ? "contact-button current-tab"
                     : "contact-button"
                 }
